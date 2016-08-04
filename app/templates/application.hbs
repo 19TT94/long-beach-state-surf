@@ -7,11 +7,11 @@
     <div class="nav-image"></div>
     <div class="nav-right"><i class="nav-icon">&#9776;</i></div>
     <div class="nav-menu">
-        <ul class="nav-toggle">    
-            <li class="nav-link">TEAM</li>
-            <li class="nav-link">CLUB</li>
-            <li class="nav-link">SPONSERS</li>
-            <li class="nav-link">CONTACT</li>
+        <ul class="nav-toggle">
+            {{#link-to 'team' class="nav-link"}}TEAM{{/link-to}}
+            {{#link-to 'club' class="nav-link"}}CLUB{{/link-to}}
+            {{#link-to 'sponsers' class="nav-link"}}SUPPORT{{/link-to}}
+            {{#link-to 'contact' class="nav-link"}}CONTACT{{/link-to}}
         </ul>
     </div>
 </div>
@@ -22,6 +22,6 @@
     <p class="footer-info">&copy Taylor Tobin</p>
     <ul class="footer-links">
         <li class="footer-link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf"><img class="footer-image" src="/assets/images/facebook.png"></a></li>
-        <li class="footer-link"><a href="https://www.instagram.com/longbeachstatesurf/"><img class="footer-image" src="/assets/images/instagram.png"></a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/longbeachstatesurf/"><img id="insta" class="footer-image" src="/assets/images/instagram.png"></a></li>
     </ul>
 </div>
