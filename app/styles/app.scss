@@ -92,6 +92,15 @@
     border-bottom: 1px solid #000;
     display: block; }
 
+.nav-icon:hover .nav-menu {
+    animation: slide;
+}
+
+@keyframes slide {
+    from { transform: translateY(0);}
+    to { transform: translateY(100px);}
+}
+
 //////////////
 // HOMEPAGE //
 ///////////////////////////////////////////////////////////
