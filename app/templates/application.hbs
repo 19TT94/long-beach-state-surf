@@ -5,21 +5,21 @@
         <h1 class="nav-title-bg">LONG BEACH STATE SURF</h1>
     </div>
     <div class="nav-image"></div>
-    <div class="nav-right"><div class="nav-icon">&#9776;</div></div>
+    <div class="nav-right"><i class="nav-icon">&#9776;</i></div>
     <div class="nav-menu">
-        <div class="nav-toggle">
+        <ul class="nav-toggle">
             {{#link-to 'team' class="nav-link"}}TEAM{{/link-to}}
             {{#link-to 'club' class="nav-link"}}CLUB{{/link-to}}
             {{#link-to 'sponsers' class="nav-link"}}SUPPORT{{/link-to}}
             {{#link-to 'contact' class="nav-link"}}CONTACT{{/link-to}}
-        </div>
+        </ul>
     </div>
 </div>
 
 {{#link-to 'index'}}HOME{{/link-to}}
 {{#link-to 'contact'}}CONTACT{{/link-to}}
 
-{{liquid-outlet}}
+{{outlet}}
 
 <div class="footer">
     <p class="footer-info">&copy Taylor Tobin</p>
