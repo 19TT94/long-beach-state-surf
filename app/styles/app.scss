@@ -146,9 +146,18 @@
 /////////////
 // CONTACT //
 ///////////////////////////////////////////////////////////
+.contact-container {
+    margin: 20px; }
+
+.contact-title {
+    font-size: 1em; }
+
+.contact-text {
+    font-size: .75em; }
+
 .map-container {
     position: relative;
-    padding-bottom: 75%;
+    padding-bottom: 63%;
     height: 0;
     overflow: hidden; }
 
