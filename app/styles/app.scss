@@ -187,6 +187,9 @@
 //////////
 // TEAM //
 ///////////////////////////////////////////////////////////
+.team {
+    background-color: lightgray; }
+
 .team-image {
     width: 100%;
     height: 318px;
@@ -197,8 +200,11 @@
     padding: 20px; }
 
 .team-profiles {
+    background-color: darkslategray; }
+
+.team-profiles-title {
     padding: 20px; }
-    
+
 ////////////
 // FOOTER //
 ///////////////////////////////////////////////////////////
