@@ -171,7 +171,9 @@
 // CONTACT //
 ///////////////////////////////////////////////////////////
 .contact-container {
-    margin: 20px; }
+    margin: 20px;
+    background: #fff;
+    padding: 20px; }
 
 .contact-title {
     font-size: 1em; }
@@ -181,7 +183,7 @@
 
 .map-container {
     position: relative;
-    padding-bottom: 63%;
+    padding-bottom: 48%;
     height: 0;
     overflow: hidden; }
 
