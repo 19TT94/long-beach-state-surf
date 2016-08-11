@@ -22,7 +22,8 @@
             width: 150px;
             height: 150px;
             margin-top: -75px;
-            margin-left: -75px; }
+            margin-left: -75px;
+            bottom: -50px; }
      }
 
     .contact &, .team &, .club &, .sponsers & {
@@ -30,10 +31,11 @@
         transition: all 2s;
 
         .nav-image {
-            width: 50px;
-            height: 50px;
-            margin-top: -25px;
-            margin-left: -25px; }
+            width: 70px;
+            height: 70px;
+            margin-top: -35px;
+            margin-left: -35px;
+            bottom: -25px; }
 
         .nav-title {
             display: none;
@@ -65,10 +67,11 @@
     display: none; }
 
 .nav-image {
-    bottom: 0;
     left: 50%;
     position: absolute;
-    background-image: url("http://placehold.it/150x150"); }
+    background-image: url("/assets/images/pyramid.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 .nav-right {
     float: right;
