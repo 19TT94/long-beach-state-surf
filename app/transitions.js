@@ -1,10 +1,4 @@
 export default function(){
-  //nav
-  this.transition(
-      this.hasClass('nav-content'),
-      this.use('toDown')
-  );
-
   //from index
   this.transition(
     this.fromRoute('index'),
