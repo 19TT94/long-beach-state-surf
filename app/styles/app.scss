@@ -146,6 +146,10 @@
 //////////////
 // SPONSERS //
 ///////////////////////////////////////////////////////////
+.sponsers-title {
+    text-align: center;
+    color: #fff; }
+
 .row {
     text-align: center; }
 
@@ -156,7 +160,8 @@
     display: inline-block;
     border-radius: 50%;
     border: 1px solid #000;
-    overflow: hidden; }
+    overflow: hidden;
+    background-color: #fff; }
 
 .sponser-image {
     width: 100%;
