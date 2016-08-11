@@ -87,7 +87,7 @@
     width: 100%;
     background-color: cornsilk;
     transform: translateY(-105%);
-    transition: transform 150ms ease;
+    transition: transform 1s ease;
 
     &.is-visible {
         transform: translateY(0);
