@@ -5,9 +5,9 @@
         <h1 class="nav-title-bg">LONG BEACH STATE SURF</h1>
     </div>
     <div class="nav-image"></div>
-    <div class="nav-right" {{action "toggleDetail"}}><i class="nav-icon">&#9776;</i></div>
-    {{#liquid-if showDetail class="nav-content"}}
-    <div class="nav-menu">
+    <div class="nav-right" {{action "toggleMenu"}}><i class="nav-icon">&#9776;</i></div>
+
+    <div class="nav-menu {{if navIsExpanded "is-visible"}}">
         <ul class="nav-toggle">
             {{#link-to 'team' class="nav-link"}}TEAM{{/link-to}}
             {{#link-to 'club' class="nav-link"}}CLUB{{/link-to}}
@@ -15,7 +15,7 @@
             {{#link-to 'contact' class="nav-link"}}CONTACT{{/link-to}}
         </ul>
     </div>
-    {{/liquid-if}}
+
 </div>
 
 {{#link-to 'index'}}HOME{{/link-to}}

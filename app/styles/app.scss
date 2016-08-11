@@ -83,7 +83,14 @@
     position: absolute;
     width: 100%;
     background-color: cornsilk;
-    transform: translateY(-105%); }
+    transform: translateY(-105%);
+    transition: transform 150ms ease;
+
+    &.is-visible {
+        transform: translateY(0);
+    }
+}
+
 
 .nav-toggle {
     list-style: none;
