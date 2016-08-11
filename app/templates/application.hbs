@@ -6,22 +6,17 @@
     </div>
     <div class="nav-image"></div>
     <div class="nav-right" {{action "toggleMenu"}}><i class="nav-icon">&#9776;</i></div>
-
     <div class="nav-menu {{if navIsExpanded "is-visible"}}">
         <ul class="nav-toggle">
             {{#link-to 'team' class="nav-link"}}TEAM{{/link-to}}
             {{#link-to 'club' class="nav-link"}}CLUB{{/link-to}}
             {{#link-to 'sponsers' class="nav-link"}}SUPPORT{{/link-to}}
             {{#link-to 'contact' class="nav-link"}}CONTACT{{/link-to}}
+            <div class="nav-back" {{action "toggleMenu"}}><i class="nav-arrow">arrow</i></div>
         </ul>
     </div>
 
 </div>
-
-{{#link-to 'index'}}HOME{{/link-to}}
-{{#link-to 'contact'}}CONTACT{{/link-to}}
-{{#link-to 'team'}}TEAM{{/link-to}}
-{{#link-to 'sponsers'}}Sponsers{{/link-to}}
 
 {{outlet}}
 
