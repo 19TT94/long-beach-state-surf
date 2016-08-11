@@ -1,5 +1,5 @@
 .ember-application {
-    margin: 0; }
+    margin:0; }
 
 //////////////
 //  NAVBAR  //
@@ -38,6 +38,10 @@
         .nav-title {
             display: none;
             transition: all 2s; }
+    }
+
+    .team &, .club & {
+        position: fixed;
     }
 }
 
@@ -168,6 +172,12 @@
     width: 100%;
     height: 100%; }
 
+//////////
+// TEAM //
+///////////////////////////////////////////////////////////
+.team {
+    margin-top: 45px; }
+
 ////////////
 // FOOTER //
 ///////////////////////////////////////////////////////////
@@ -175,7 +185,8 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    background-color: #fff; }
 
 .footer-info {
     float: left;
