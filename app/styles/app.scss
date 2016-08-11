@@ -106,14 +106,14 @@
     border-bottom: 1px solid #000;
     display: block; }
 
-.nav-icon:hover .nav-menu {
-    animation: slide;
-}
+.nav-back {
+    text-align: center;
+    padding: 10px;
+    transform: rotateX(180deg); }
 
-@keyframes slide {
-    from { transform: translateY(0);}
-    to { transform: translateY(100px);}
-}
+.nav-arrow {
+    text-decoration: none;
+    font-style: normal; }
 
 //////////////
 // HOMEPAGE //
