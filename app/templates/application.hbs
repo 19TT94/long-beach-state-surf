@@ -8,10 +8,10 @@
     <div class="nav-right" {{action "toggleMenu"}}><i class="nav-icon">&#9776;</i></div>
     <div class="nav-menu {{if navIsExpanded "is-visible"}}">
         <ul class="nav-toggle">
-            {{#link-to 'team' class="nav-link"}}TEAM{{/link-to}}
-            {{#link-to 'club' class="nav-link"}}CLUB{{/link-to}}
-            {{#link-to 'sponsers' class="nav-link"}}SUPPORT{{/link-to}}
-            {{#link-to 'contact' class="nav-link"}}CONTACT{{/link-to}}
+            {{#link-to 'team' class="nav-link"}}<div {{action "toggleMenu"}}>TEAM</div>{{/link-to}}
+            {{#link-to 'club' class="nav-link"}}<div {{action "toggleMenu"}}>CLUB</div>{{/link-to}}
+            {{#link-to 'sponsers' class="nav-link"}}<div {{action "toggleMenu"}}>SUPPORT</div>{{/link-to}}
+            {{#link-to 'contact' class="nav-link"}}<div {{action "toggleMenu"}}>CONTACT</div>{{/link-to}}
             <div class="nav-back" {{action "toggleMenu"}}><i class="nav-arrow">&dHar;</i></div>
         </ul>
     </div>
