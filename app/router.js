@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('team');
   this.route('club');
   this.route('sponsers');
+  this.route('members');
 });
 
 export default Router;
