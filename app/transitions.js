@@ -1,12 +1,6 @@
 export default function(){
   //from index
   this.transition(
-      this.fromRoute('index'),
-      this.toRoute('members'),
-      this.use('toUp'),
-      this.reverse('toDown')
-  );
-  this.transition(
     this.fromRoute('index'),
     this.toRoute('sponsers'),
     this.use('toUp'),
@@ -34,8 +28,8 @@ export default function(){
   this.transition(
     this.fromRoute('members'),
     this.toRoute('sponsers'),
-    this.use('toDown'),
-    this.reverse('toUp')
+    this.use('toUp'),
+    this.reverse('toDown')
   );
   this.transition(
     this.fromRoute('members'),
@@ -53,8 +47,8 @@ export default function(){
   this.transition(
     this.fromRoute('sponsers'),
     this.toRoute('contact'),
-    this.use('toDown'),
-    this.reverse('toUp')
+    this.use('toUp'),
+    this.reverse('toDown')
   );
   this.transition(
     this.fromRoute('sponsers'),
