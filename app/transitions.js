@@ -21,8 +21,8 @@ export default function(){
   this.transition(
     this.fromRoute('index'),
     this.toRoute('club'),
-    this.use('toLeft'),
-    this.reverse('toRight')
+    this.use('toRight'),
+    this.reverse('toLeft')
   );
   //from members
   this.transition(
@@ -40,8 +40,8 @@ export default function(){
   this.transition(
     this.fromRoute('members'),
     this.toRoute('club'),
-    this.use('toLeft'),
-    this.reverse('toRight')
+    this.use('toRight'),
+    this.reverse('toLeft')
   );
   //from sponsers
   this.transition(
@@ -59,8 +59,8 @@ export default function(){
   this.transition(
     this.fromRoute('sponsers'),
     this.toRoute('club'),
-    this.use('toLeft'),
-    this.reverse('toRight')
+    this.use('toRight'),
+    this.reverse('toLeft')
   );
   //from contact
   this.transition(
@@ -72,7 +72,7 @@ export default function(){
   this.transition(
     this.fromRoute('contact'),
     this.toRoute('club'),
-    this.use('toLeft'),
-    this.reverse('toRight')
+    this.use('toRight'),
+    this.reverse('toLeft')
   );
 }
