@@ -108,7 +108,9 @@
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #000;
-    display: block; }
+    display: block;
+    text-decoration: none;
+    color: #000; }
 
 .nav-back {
     text-align: center;
@@ -140,10 +142,13 @@
 ///////////////////////////////////////////////////////////
 .members-block {
     text-align: center;
-    margin: 50px; }
+    margin: 50px;
+    margin-bottom: 10px;
+    padding: 50px 0px 50px; 
+    background-color: beige; }
 
 .members-title {
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: none;
     color: #000; }
 
@@ -152,7 +157,8 @@
 ///////////////////////////////////////////////////////////
 .sponsers-title {
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    margin: 10px 0px 0px 0px; }
 
 .row {
     text-align: center; }
