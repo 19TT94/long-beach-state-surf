@@ -1,6 +1,12 @@
 export default function(){
   //from index
   this.transition(
+      this.fromRoute('index'),
+      this.toRoute('members'),
+      this.use('toUp'),
+      this.reverse('toDown')
+  );
+  this.transition(
     this.fromRoute('index'),
     this.toRoute('sponsers'),
     this.use('toUp'),
@@ -20,6 +26,25 @@ export default function(){
   );
   this.transition(
     this.fromRoute('index'),
+    this.toRoute('club'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  //from members
+  this.transition(
+    this.fromRoute('members'),
+    this.toRoute('sponsers'),
+    this.use('toDown'),
+    this.reverse('toUp')
+  );
+  this.transition(
+    this.fromRoute('members'),
+    this.toRoute('team'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('members'),
     this.toRoute('club'),
     this.use('toLeft'),
     this.reverse('toRight')
