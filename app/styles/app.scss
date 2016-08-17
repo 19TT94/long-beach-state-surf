@@ -92,7 +92,7 @@
 .nav-menu {
     position: absolute;
     width: 100%;
-    background-color: cornsilk;
+    background-color: darkgray;
     transform: translateY(-105%);
     transition: transform 1s ease;
 
@@ -110,10 +110,10 @@
 .nav-link {
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     display: block;
     text-decoration: none;
-    color: #000; }
+    color: #fff; }
 
 .nav-back {
     text-align: center;
@@ -122,7 +122,8 @@
 
 .nav-arrow {
     text-decoration: none;
-    font-style: normal; }
+    font-style: normal;
+    color: #fff; }
 
 //////////////
 // HOMEPAGE //
