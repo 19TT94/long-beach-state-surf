@@ -246,11 +246,21 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #fff; }
+    background-color: rgba(255,255,255,0.5);
+
+    .contact &, .team &, .club & {
+        background-color: #fff; }
+}
 
 .footer-info {
     float: left;
-    display: none; }
+    padding-left: 10px;
+    margin-top: 20px; 
+    display: none;
+
+    .contact & {
+        display: block; }
+}
 
 .footer-links {
     float: right; }
