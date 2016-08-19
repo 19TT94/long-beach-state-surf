@@ -1,9 +1,7 @@
 .ember-application {
     margin:0;
-    background-image: url("/assets/images/pier.jpg");
-    //background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("/assets/images/pier.jpg") no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Hind', sans-serif; }
 
 //////////////
@@ -255,7 +253,7 @@
 .footer-info {
     float: left;
     padding-left: 10px;
-    margin-top: 20px; 
+    margin-top: 20px;
     display: none;
 
     .contact & {
