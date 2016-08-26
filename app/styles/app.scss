@@ -159,7 +159,11 @@
 
 .next {
     text-align: center;
-    padding-top: 10px; }
+    padding-top: 10px;
+
+    @media (min-width: 414px) {
+        padding-top: 40px; }
+}
 
 .next-arrow {
     font-style: normal;
@@ -175,11 +179,15 @@
     margin: 50px;
     margin-bottom: 10px;
     padding: 20px 60px 20px 60px;
-    background: beige;
-    box-shadow: 10px 10px 5px rgba(0,0,0,.5); }
+    background: linear-gradient(lightgrey, grey);
+    box-shadow: 10px 10px 5px rgba(0,0,0,.5);
+
+    @media (min-width: 375px) {
+        padding: 60px; }
+}
 
 .members-title {
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-decoration: none;
     color: #000; }
 
@@ -202,7 +210,11 @@
     border: 1px solid #000;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 5px 10px 5px rgba(0,0,0,0.5); }
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
+
+    @media (min-width: 375px) {
+        margin: 10px; }
+}
 
 .sponser-image {
     width: 100%;
@@ -228,7 +240,14 @@
     position: relative;
     padding-bottom: 54%;
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+
+    @media (min-width: 375px) {
+        padding-bottom: 73%; }
+
+    @media (min-width: 414px) {
+        padding-bottom: 83%; }
+}
 
 .map-object {
     position: absolute;
@@ -279,6 +298,18 @@
     width: 150px;
     height: auto; }
 
+.team-profiles {
+    @media (min-width: 768px) {
+        margin: 50px;
+        text-align: center; }
+}
+
+.row {
+    @media (min-width: 768px) {
+        display: inline-block;
+        margin: 20px; }
+}
+
 //////////
 // CLUB //
 ///////////////////////////////////////////////////////////
@@ -293,6 +324,12 @@
 
 .club-profiles-title {
     padding: 20px; }
+
+.club-profiles {
+    @media (min-width: 768px) {
+        margin: 50px;
+        text-align: center; }
+}
 
 ////////////
 // FOOTER //
