@@ -88,10 +88,18 @@
 
 .nav-title {
     font-size: 1em;
-    padding: 4px; }
+    padding: 4px;
+    @media (min-width: 768px) { display: none; }
+}
 
 .nav-title-bg {
-    display: none; }
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        font-size: 1.5em;
+        padding-left: 10px; }
+}
 
 .nav-image {
     left: 50%;
@@ -198,6 +206,9 @@
     text-align: center;
     color: #fff;
     margin: 10px 0px 0px 0px; }
+
+.sponsers-block {
+    text-align: center; }
 
 .row {
     text-align: center; }
