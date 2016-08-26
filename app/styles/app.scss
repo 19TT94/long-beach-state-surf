@@ -27,28 +27,23 @@
             margin-top: -75px;
             margin-left: -75px;
             bottom: -50px;
-            transition: all 2s ease; }
+            transition: all 2s ease;
 
-        @media (min-width: 375px) {
-            .nav-image {
+            @media (min-width: 375px) {
                 width: 250px;
                 height: 250px;
                 margin-top: -125px;
                 margin-left: -125px;
                 margin-bottom: -33px; }
-        }
 
-        @media (min-width: 768px) {
-            .nav-image {
+            @media (min-width: 768px) {
                 width: 350px;
                 height: 350px;
                 margin-top: -175px;
                 margin-left: -175px;
                 margin-bottom: -67px; }
-        }
 
-        @media (min-width: 1025px) {
-            .nav-image {
+            @media (min-width: 1025px) {
                 width: 500px;
                 height: 500px;
                 margin-top: -250px;
@@ -155,7 +150,12 @@
 ///////////////////////////////////////////////////////////
 .home-title {
     text-align: center;
-    padding-top: 10px; }
+    padding: 10px 5px 0px;
+    margin-bottom: 0;
+
+    @media (min-width: 375px) {
+        padding: 50px 50px 0px; }
+}
 
 .next {
     text-align: center;
