@@ -185,6 +185,9 @@
 /////////////
 // MEMBERS //
 ///////////////////////////////////////////////////////////
+.members {
+    text-align: center; }
+
 .members-block {
     text-align: center;
     margin: 50px;
@@ -195,6 +198,9 @@
 
     @media (min-width: 375px) {
         padding: 60px; }
+
+    @media (min-width: 768px) {
+        display: inline-block; }
 }
 
 .members-title {
