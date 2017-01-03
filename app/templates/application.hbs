@@ -1,18 +1,18 @@
 <div class="nav">
     <div class="nav-left">
-        {{#link-to 'index'}}<div class="nav-logo"></div>{{/link-to}}
+        {{#link-to 'index'}}<button class="nav-logo"></button>{{/link-to}}
         <h1 class="nav-title">LBSU SURF</h1>
         <h1 class="nav-title-bg">LONG BEACH STATE SURF</h1>
     </div>
     <div class="nav-image"></div>
-    <div class="nav-right" {{action "toggleMenu"}}><i class="nav-icon">&#9776;</i></div>
+    <button class="nav-right" {{action "toggleMenu"}}><i class="nav-icon">&#9776;</i></button>
     <div class="nav-menu {{if navIsExpanded "is-visible"}}">
         <ul class="nav-toggle">
-            {{#link-to 'team' class="nav-link"}}<div {{action "toggleMenu"}}>TEAM</div>{{/link-to}}
-            {{#link-to 'club' class="nav-link"}}<div {{action "toggleMenu"}}>CLUB</div>{{/link-to}}
-            {{#link-to 'sponsers' class="nav-link"}}<div {{action "toggleMenu"}}>SUPPORT</div>{{/link-to}}
-            {{#link-to 'contact' class="nav-link"}}<div {{action "toggleMenu"}}>CONTACT</div>{{/link-to}}
-            <div class="nav-back" {{action "toggleMenu"}}><i class="nav-arrow">&dHar;</i></div>
+            {{#link-to 'team' class="nav-link"}}<li {{action "toggleMenu"}}>TEAM</li>{{/link-to}}
+            {{#link-to 'club' class="nav-link"}}<li {{action "toggleMenu"}}>CLUB</li>{{/link-to}}
+            {{#link-to 'sponsers' class="nav-link"}}<li {{action "toggleMenu"}}>SUPPORT</li>{{/link-to}}
+            {{#link-to 'contact' class="nav-link"}}<li {{action "toggleMenu"}}>CONTACT</li>{{/link-to}}
+            <button class="nav-back" {{action "toggleMenu"}}><i class="nav-arrow">&dHar;</i></button>
         </ul>
     </div>
 </div>

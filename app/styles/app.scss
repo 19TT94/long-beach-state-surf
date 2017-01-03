@@ -4,6 +4,11 @@
     background-size: cover;
     font-family: 'Hind', sans-serif; }
 
+button {
+  border: none;
+  background: none;
+}
+
 //////////////
 //  NAVBAR  //
 ///////////////////////////////////////////////////////////
@@ -18,7 +23,7 @@
     border-bottom: 2px solid #000;
 
     .index & {
-        padding-bottom: 30vh;
+        padding-bottom: 25vh;
         transition: all 2s;
 
         .nav-image {
@@ -168,13 +173,17 @@
 
 .next {
     text-align: center;
+    width: 100%;
     padding-top: 10px;
+
+    margin-bottom: 100px;
 
     @media (min-width: 414px) {
         padding-top: 40px; }
 }
 
 .next-arrow {
+    z-index: 99;
     font-style: normal;
     font-size: 3em;
     text-decoration: none;
@@ -190,8 +199,7 @@
 
 .members-block {
     text-align: center;
-    margin: 50px;
-    margin-bottom: 10px;
+    margin: 30px 50px 10px 50px;
     padding: 20px 60px 20px 60px;
     background: linear-gradient(lightgrey, grey);
     box-shadow: 10px 10px 5px rgba(0,0,0,.5);
@@ -212,6 +220,7 @@
 // SPONSERS //
 ///////////////////////////////////////////////////////////
 .sponsers-title {
+    font-size: 1.5em;
     text-align: center;
     color: #fff;
     margin: 10px 0px 0px 0px; }
@@ -378,11 +387,13 @@
 .footer {
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.5);
+    right: 0;
+    //width: 100%;
+    // background-color: rgba(255,255,255,0.5);
 
     .contact &, .team &, .club & {
+        width: 100%;
+        left: 0;
         background-color: #fff; }
 }
 
