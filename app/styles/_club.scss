@@ -1,0 +1,27 @@
+//////////
+// CLUB //
+///////////////////////////////////////////////////////////
+.club {
+    background-color: steelblue; }
+
+.club-image {
+    width: 100%;
+    height: 318px;
+    background-image: url("/assets/images/club.jpg");
+    background-size: cover;
+
+    @media (min-width: 768px) {
+        height: 465px; }
+
+    @media (min-width: 1025px) {
+        height: 800px; }
+}
+
+.club-profiles-title {
+    padding: 20px; }
+
+.club-profiles {
+    @media (min-width: 768px) {
+        margin: 50px;
+        text-align: center; }
+}

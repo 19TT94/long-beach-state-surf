@@ -1,0 +1,67 @@
+//////////
+// TEAM //
+///////////////////////////////////////////////////////////
+.team {
+    background-color: darkslategray; }
+
+.team-image {
+    width: 100%;
+    height: 318px;
+    background-image: url("/assets/images/team2.jpeg");
+    background-size: cover;
+
+    @media (min-width: 768px) {
+        height: 465px; }
+
+    @media (min-width: 1025px) {
+        height: 800px; }
+}
+
+.calendar-title {
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 0; }
+
+.calendar {
+    background-color: lightgray;
+    padding-bottom: 100px;
+
+    @media (min-width: 768px) {
+        padding: 0px 250px 100px 250px; }
+
+    @media (min-width: 1024px) {
+        padding: 0px 350px 100px 350px; }
+}
+
+.calendar-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+}
+
+.team-profiles-title {
+    padding: 20px;
+    margin: 0; }
+
+.profile-image {
+    width: 150px;
+    height: auto; }
+
+.team-profiles {
+    @media (min-width: 768px) {
+        margin: 50px;
+        text-align: center; }
+}
+
+.row {
+    @media (min-width: 768px) {
+        display: inline-block;
+        margin: 20px; }
+}

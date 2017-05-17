@@ -1,0 +1,32 @@
+//////////////
+// SPONSERS //
+///////////////////////////////////////////////////////////
+.sponsers-title {
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0px 0px 0px; }
+
+.sponsers-block {
+    text-align: center; }
+
+.row {
+    text-align: center; }
+
+.sponser {
+    width: 25vw;
+    height: 25vw;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #000;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
+
+    @media (min-width: 375px) {
+        margin: 10px; }
+}
+
+.sponser-image {
+    width: 100%;
+    height: auto; }

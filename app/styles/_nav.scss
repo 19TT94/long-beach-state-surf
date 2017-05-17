@@ -1,0 +1,235 @@
+.ember-application {
+    margin:0;
+    background: url("/assets/images/pier.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Hind', sans-serif; }
+
+button {
+  border: none;
+  background: none;
+}
+
+//////////////
+//  NAVBAR  //
+///////////////////////////////////////////////////////////
+.nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    // border-bottom: 2px solid #000;
+
+    .index & {
+        padding-bottom: 40vh;
+        transition: all 2s;
+
+        @media (min-width: 768px) {
+            padding-bottom: 50vh;
+        }
+
+        .nav-image {
+            width: 200px;
+            height: 200px;
+            margin-top: -100px;
+            margin-left: -100px;
+            bottom: -99px;
+            transition: all 2s ease;
+
+            @media (min-width: 375px) {
+                width: 250px;
+                height: 250px;
+                margin-top: -125px;
+                margin-left: -125px;
+                margin-bottom: -24px; }
+
+            @media (min-width: 768px) {
+                width: 350px;
+                height: 350px;
+                margin-top: -175px;
+                margin-left: -175px;
+                margin-bottom: -74px; }
+
+            @media (min-width: 1025px) {
+                width: 500px;
+                height: 500px;
+                margin-top: -250px;
+                margin-left: -250px;
+                margin-bottom: -147px; }
+        }
+     }
+
+    .contact &, .team &, .club &, .members &, .sponsers & {
+        padding-bottom: none;
+        transition: all 2s;
+
+        .nav-image {
+            width: 85px;
+            height: 85px;
+            margin-top: -35px;
+            margin-left: -35px;
+            bottom: -42px;
+            transition: all 2s ease; }
+
+        .nav-title {
+            display: none;
+            transition: all 2s; }
+    }
+
+    .team &, .club & {
+        position: fixed;
+    }
+}
+
+.nav-left {
+    float: left;
+    display: flex;
+    width: 50%; }
+
+.nav-logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("/assets/images/csulbsurflogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px; }
+
+.nav-title {
+    font-size: 1em;
+    padding: 4px;
+    @media (min-width: 768px) { display: none; }
+}
+
+.nav-title-bg {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        font-size: 1.5em;
+        padding-left: 10px; }
+}
+
+.nav-image {
+    left: 50%;
+    position: absolute;
+    background-image: url("/assets/images/beach-pyramid.gif");
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.nav-right {
+    float: right;
+    width: 50%; }
+
+.nav-icon {
+    font-style: normal;
+    float: right;
+    padding: 10px; }
+
+.nav-menu {
+    position: absolute;
+    width: 100%;
+    background-color: darkgray;
+    transform: translateY(-105%);
+    transition: transform 1s ease;
+
+    &.is-visible {
+        transform: translateY(0);
+    }
+}
+
+
+.nav-toggle {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+.nav-link {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 55px rgba(255,255,255,0.5);
+    display: block;
+    text-decoration: none;
+    color: #fff; }
+
+.nav-back {
+    text-align: center;
+    padding: 10px;
+    transform: rotateX(180deg); }
+
+.nav-arrow {
+    text-decoration: none;
+    font-style: normal;
+    color: #fff; }
+//Mobile nav
+.mobile-nav {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+//Desktop nav
+.desktop-nav {
+  display:none;
+  float: right;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.nav-row {
+  list-style: none;
+  margin: 20px 0 0;
+}
+
+.desktop-button {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+////////////
+// FOOTER //
+///////////////////////////////////////////////////////////
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    //width: 100%;
+    // background-color: rgba(255,255,255,0.5);
+
+    .contact &, .team &, .club & {
+        width: 100%;
+        left: 0;
+        background-color: #fff; }
+}
+
+.footer-info {
+    float: left;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: none;
+
+    .contact & {
+        display: block; }
+}
+
+.footer-links {
+    float: right; }
+
+.footer-link {
+    list-style: none;
+    display: inline-block; }
+
+.footer-image {
+    width: 30px;
+    height: auto;
+    padding-right: 5px; }
+
+#insta {
+    padding-bottom: 2px; }
