@@ -8,14 +8,14 @@
     <div class="nav-image"></div>
 
     <div class="mobile-nav">
-        <button class="nav-right" {{action "toggleMenu"}}><i class="nav-icon">&#9776;</i></button>
+        <button class="nav-right"><i class="nav-icon" {{action "toggleMenu"}}>{{fa-icon "bars"}}</i></button>
         <div class="nav-menu {{if navIsExpanded "is-visible"}}">
             <ul class="nav-toggle">
+                <button class="nav-back" {{action "toggleMenu"}}>{{fa-icon "times"}}</button>
                 {{#link-to 'team' class="nav-link"}}<li {{action "toggleMenu"}}>TEAM</li>{{/link-to}}
                 {{#link-to 'club' class="nav-link"}}<li {{action "toggleMenu"}}>CLUB</li>{{/link-to}}
                 {{#link-to 'sponsers' class="nav-link"}}<li {{action "toggleMenu"}}>SUPPORT</li>{{/link-to}}
                 {{#link-to 'contact' class="nav-link"}}<li {{action "toggleMenu"}}>CONTACT</li>{{/link-to}}
-                <button class="nav-back" {{action "toggleMenu"}}><i class="fa fa-bars" aria-hidden="true"></i></button>
             </ul>
         </div>
     </div>
