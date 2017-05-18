@@ -16,6 +16,10 @@
                 {{#link-to 'club' class="nav-link"}}<li {{action "toggleMenu"}}>CLUB</li>{{/link-to}}
                 {{#link-to 'sponsers' class="nav-link"}}<li {{action "toggleMenu"}}>SUPPORT</li>{{/link-to}}
                 {{#link-to 'contact' class="nav-link"}}<li {{action "toggleMenu"}}>CONTACT</li>{{/link-to}}
+                <ul class="nav-social">
+                    <li class="nav-social--link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf">{{fa-icon 'facebook'}}</a></li>
+                    <li class="nav-social--link"><a href="https://www.instagram.com/longbeachstatesurf/">{{fa-icon 'instagram'}}</a></li>
+                </ul>
             </ul>
         </div>
     </div>
@@ -32,10 +36,12 @@
 
 {{liquid-outlet}}
 
+<button class="next">{{#link-to 'members'class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}</button>
+
 <div class="footer">
     <p class="footer-info">&copy; Taylor Tobin</p>
     <ul class="footer-links">
-        <li class="footer-link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf"><img class="footer-image" src="/assets/images/facebook.png"></a></li>
-        <li class="footer-link"><a href="https://www.instagram.com/longbeachstatesurf/"><img id="insta" class="footer-image" src="/assets/images/instagram.png"></a></li>
+        <li class="footer-link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf">{{fa-icon 'facebook'}}</a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/longbeachstatesurf/">{{fa-icon 'instagram'}}</a></li>
     </ul>
 </div>
