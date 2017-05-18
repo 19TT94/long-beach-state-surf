@@ -1,17 +1,24 @@
 //////////////
 // SPONSERS //
 ///////////////////////////////////////////////////////////
+.sponsers {
+    padding-top: 65px;
+}
+
 .sponsers-title {
     font-size: 1.5em;
     text-align: center;
     color: #fff;
-    margin: 10px 0px 0px 0px; }
+    margin: 10px 0px 0px 0px;
+}
 
 .sponsers-block {
-    text-align: center; }
+    text-align: center;
+}
 
 .row {
-    text-align: center; }
+    text-align: center;
+}
 
 .sponser {
     width: 25vw;
@@ -24,9 +31,11 @@
     box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
 
     @media (min-width: 375px) {
-        margin: 10px; }
+        margin: 10px;
+    }
 }
 
 .sponser-image {
     width: 100%;
-    height: auto; }
+    height: auto;
+}

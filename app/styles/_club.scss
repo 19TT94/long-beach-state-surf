@@ -2,7 +2,9 @@
 // CLUB //
 ///////////////////////////////////////////////////////////
 .club {
-    background-color: steelblue; }
+    padding-top: 65px;
+    background-color: steelblue;
+}
 
 .club-image {
     width: 100%;
@@ -11,17 +13,21 @@
     background-size: cover;
 
     @media (min-width: 768px) {
-        height: 465px; }
+        height: 465px;
+    }
 
     @media (min-width: 1025px) {
-        height: 800px; }
+        height: 800px;
+    }
 }
 
 .club-profiles-title {
-    padding: 20px; }
+    padding: 20px;
+}
 
 .club-profiles {
     @media (min-width: 768px) {
         margin: 50px;
-        text-align: center; }
+        text-align: center;
+    }
 }
