@@ -36,16 +36,6 @@
 
 {{liquid-outlet}}
 
-<button class="next">
-    {{#if 'index'}}
-        {{#link-to 'members' class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
-    {{else if 'members'}}
-        {{#link-to 'sponsers' class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
-    {{else if 'sponsers'}}
-        {{#link-to 'contact' class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
-    {{/if}}
-</button>
-
 <div class="footer">
     <p class="footer-info">&copy; Taylor Tobin</p>
     <ul class="footer-links">
