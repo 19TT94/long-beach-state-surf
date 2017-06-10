@@ -24,13 +24,21 @@
         </div>
     </div>
     <div class="desktop-nav">
-      <ul class="nav-row">
-          {{#link-to 'team' class="desktop-button"}}<li {{action "toggleMenu"}}>TEAM</li>{{/link-to}}
-          {{#link-to 'club' class="desktop-button"}}<li {{action "toggleMenu"}}>CLUB</li>{{/link-to}}
-          {{#link-to 'sponsers' class="desktop-button"}}<li {{action "toggleMenu"}}>SUPPORT</li>{{/link-to}}
-          {{#link-to 'contact' class="desktop-button"}}<li {{action "toggleMenu"}}>CONTACT</li>{{/link-to}}
-      </ul>
-      <hr>
+        <ul class="nav-row">
+            <li {{action "toggleMenu"}}>
+                {{#link-to 'team' class="desktop-button"}}TEAM{{/link-to}}
+            </li>
+            <li class="two" {{action "toggleMenu"}}>
+                {{#link-to 'club' class="desktop-button"}}CLUB{{/link-to}}
+            </li>
+            <li class="three" {{action "toggleMenu"}}>
+                {{#link-to 'sponsers' class="desktop-button"}}SUPPORT{{/link-to}}
+            </li>
+            <li class="four" {{action "toggleMenu"}}>
+                {{#link-to 'contact' class="desktop-button"}}CONTACT{{/link-to}}
+            </li>
+            <hr/>
+        </ul>
     </div>
 </div>
 
