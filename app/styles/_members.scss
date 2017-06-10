@@ -8,14 +8,12 @@
 
 .members-block {
     text-align: center;
-    margin: 30px 50px 10px 50px;
-    padding: 20px 60px 20px 60px;
-    background: linear-gradient(lightgrey, grey);
+    margin: 30px;
+    padding: 30px;
+    // background: linear-gradient(lightgrey, grey);
+    background: white;
+    border-radius: 10px;
     box-shadow: 10px 10px 5px rgba(0,0,0,.5);
-
-    @media (min-width: 375px) {
-        padding: 60px;
-    }
 
     @media (min-width: 768px) {
         display: inline-block;

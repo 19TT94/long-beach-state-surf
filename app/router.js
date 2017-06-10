@@ -12,6 +12,8 @@ Router.map(function() {
   this.route('club');
   this.route('sponsers');
   this.route('members');
+  this.route('alumni');
+  this.route('community');
 });
 
 export default Router;
