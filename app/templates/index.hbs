@@ -2,6 +2,18 @@
 <div class="home">
     <!-- <h1 class="home-title">Find us by the Pyramid or in the water</h1> -->
     <div class="row">
-        {{#link-to 'members' class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
+        {{#link-to 'members' class="home--next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
+    </div>
+
+    <div class="row home--desktop">
+        <div class="column medium-4">
+            {{#link-to 'team'}}Meet the Team{{/link-to}}
+        </div>
+        <div class="column medium-4">
+            {{#link-to 'club'}}Meet the Club{{/link-to}}
+        </div>
+        <div class="column medium-4">
+            {{#link-to 'community'}}Get Involved{{/link-to}}
+        </div>
     </div>
 </div>
