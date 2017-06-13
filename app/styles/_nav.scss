@@ -63,7 +63,7 @@
         }
      }
 
-    .contact &, .team &, .club &, .members &, .sponsers & {
+    .team &, .club &, .members &, .sponsers &, .community &, .contact & {
         padding-bottom: none;
         transition: all 2s;
 
@@ -333,8 +333,4 @@ hr {
 
 .four:hover ~ hr {
     margin-left: 52%;
-}
-
-.five:hover ~ hr {
-    margin-left: 80%;
 }
