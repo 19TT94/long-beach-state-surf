@@ -1,11 +1,8 @@
 //////////////
 // SPONSERS //
 ///////////////////////////////////////////////////////////
-.sponsers {
-    padding-top: 90px;
-}
-
 .sponsers-title {
+    padding-top: 90px;
     font-size: 1.5em;
     text-align: center;
     color: #fff;
@@ -16,23 +13,19 @@
     text-align: center;
 }
 
-.row {
-    text-align: center;
-    margin: 5px;
-}
-
 .sponser {
-    width: 25vw;
-    height: 25vw;
+    width: 5rem;
+    height: 5rem;
     display: inline-block;
     border-radius: 50%;
     border: 1px solid #000;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
+    margin: 10px;
 
-    @media (min-width: 375px) {
-        margin: 10px;
+    @include breakpoint (medium up) {
+        width: 10rem;
     }
 }
 

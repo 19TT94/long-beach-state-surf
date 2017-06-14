@@ -1,27 +1,6 @@
 /////////////
 // MEMBERS //
 ///////////////////////////////////////////////////////////
-.members {
-    padding-top: 50px;
-    text-align: center;
-}
-
 .members-block {
-    text-align: center;
-    margin: 30px;
-    padding: 30px;
-    // background: linear-gradient(lightgrey, grey);
-    background: white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px rgba(0,0,0,.5);
-
-    @media (min-width: 768px) {
-        display: inline-block;
-    }
-}
-
-.members-title {
-    font-size: 1.4em;
-    text-decoration: none;
-    color: #000;
+    padding-top: 150px;
 }
