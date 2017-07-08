@@ -1,4 +1,15 @@
 {{liquid-outlet}}
 <div class="home">
-    <!-- <h1 class="home-title">Find us by the Pyramid or in the water</h1> -->
+    <div class="row next">
+        {{#link-to 'members' class="home next__arrow"}}{{fa-icon 'angle-double-down' class="next__arrow--icon"}}{{/link-to}}
+    </div>
+
+    <div class="row home__desktop">
+        <div class="column medium-6 center">
+            {{#link-to 'team' class="ticket"}}{{fa-icon 'long-arrow-left'}}Meet the Team{{/link-to}}
+        </div>
+        <div class="column medium-6 center">
+            {{#link-to 'club' class="ticket"}}Meet the Club{{fa-icon 'long-arrow-right'}}{{/link-to}}
+        </div>
+    </div>
 </div>

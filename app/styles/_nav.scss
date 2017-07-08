@@ -1,6 +1,6 @@
 .ember-application {
     margin:0;
-    background: url("/assets/images/pier.jpg") no-repeat center center fixed;
+    background: url("/assets/images/ocean.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Hind', sans-serif; }
 
@@ -31,48 +31,30 @@
 
         .nav-image {
             width: 200px;
-            height: 200px;
-            margin-top: -100px;
+            height: 160px;
             margin-left: -100px;
-            bottom: -99px;
+            bottom: -59px;
             transition: all 2s ease;
 
-            @media (min-width: 375px) {
-                width: 250px;
-                height: 250px;
-                margin-top: -125px;
-                margin-left: -125px;
-                margin-bottom: -24px;
-            }
-
-            @media (min-width: 768px) {
-                width: 350px;
-                height: 350px;
-                margin-top: -175px;
-                margin-left: -175px;
-                margin-bottom: -74px;
-            }
-
-            @media (min-width: 1025px) {
-                width: 500px;
-                height: 500px;
-                margin-top: -250px;
-                margin-left: -250px;
-                margin-bottom: -147px;
+            @include breakpoint (medium up) {
+                width: 400px;
+                height: 320px;
+                margin-left: -200px;
+                bottom: -117px;
             }
         }
      }
 
-    .contact &, .team &, .club &, .members &, .sponsers & {
+    .team &, .club &, .members &, .sponsers &, .community &, .contact & {
         padding-bottom: none;
         transition: all 2s;
 
         .nav-image {
-            width: 85px;
-            height: 85px;
-            margin-top: -35px;
-            margin-left: -35px;
-            bottom: -42px;
+            width: 90px;
+            height: 72px;
+            margin-top: -45px;
+            margin-left: -45px;
+            bottom: -26px;
             transition: all 2s ease;
         }
 
@@ -96,27 +78,11 @@
 .nav-logo {
     width: 55px;
     height: 55px;
-    background-image: url("/assets/images/csulbsurflogo.png");
+    background-image: url("/assets/images/lbsusurflogo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin: 10px;
-}
-
-.nav-title {
-    font-size: 1em;
-    padding: 4px;
-    @media (min-width: 768px) { display: none; }
-}
-
-.nav-title-bg {
-    display: none;
-
-    @media (min-width: 768px) {
-        display: block;
-        font-size: 1.5em;
-        padding-left: 10px;
-    }
 }
 
 .nav-image {
@@ -190,15 +156,9 @@
     transform: rotateX(180deg);
 }
 
-.nav-arrow {
-    text-decoration: none;
-    font-style: normal;
-    color: #fff;
-}
-
 //Mobile nav
 .mobile-nav {
-    @media screen and (min-width: 1024px) {
+    @include breakpoint (medium up) {
     display: none;
     }
 }
@@ -206,8 +166,9 @@
 //Desktop nav
 .desktop-nav {
     display:none;
-    float: right;
-    @media screen and (min-width: 1024px) {
+    position: absolute;
+    right: 0;
+    @include breakpoint (medium up) {
         display: block;
     }
 }
@@ -215,6 +176,7 @@
 .nav-row {
     list-style: none;
     margin: 20px 0 0;
+    display: inline-flex;
 }
 
 .desktop-button {
@@ -224,39 +186,11 @@
     color: black;
     text-decoration: none;
     padding: 0 10px;
-}
 
-//////////////////
-// PAGE TOGGLE //
-///////////////////////////////////////////////////////////
-
-.next {
-    position: absolute;
-    top: 520px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 100%;
-
-    .contact &, .team &, .club & {
-        display: none;
+    &:hover {
+        color: $black;
     }
 }
-
-.next-arrow {
-    z-index: 99;
-    color: #000;
-    text-shadow: 3px 2px 2px rgba(0,0,0,0.8);
-
-    &--icon {
-        font-style: normal;
-        text-decoration: none;
-        font-size: 5em;
-        padding: 3px;
-        border: 5px solid #000;
-        border-radius: 35px;
-    }
- }
 
 ////////////
 // FOOTER //
@@ -308,4 +242,26 @@
 
 #insta {
     padding-bottom: 2px;
+}
+
+hr {
+    position: absolute;
+    height: .15rem;
+    width: 10%;
+    margin: 30px 0 0 10px;
+    background: black;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.two:hover ~ hr {
+    margin-left: 24%;
+}
+
+.three:hover ~ hr {
+    margin-left: 43%;
+}
+
+.four:hover ~ hr {
+    margin-left: 72%;
 }

@@ -15,6 +15,7 @@
                 {{#link-to 'team' class="nav-link"}}<li {{action "toggleMenu"}}>TEAM</li>{{/link-to}}
                 {{#link-to 'club' class="nav-link"}}<li {{action "toggleMenu"}}>CLUB</li>{{/link-to}}
                 {{#link-to 'sponsers' class="nav-link"}}<li {{action "toggleMenu"}}>SUPPORT</li>{{/link-to}}
+                {{#link-to 'community' class="nav-link"}}<li {{action "toggleMenu"}}>COMMUNITY</li>{{/link-to}}
                 {{#link-to 'contact' class="nav-link"}}<li {{action "toggleMenu"}}>CONTACT</li>{{/link-to}}
                 <ul class="nav-social">
                     <li class="nav-social--link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf">{{fa-icon 'facebook'}}</a></li>
@@ -24,27 +25,25 @@
         </div>
     </div>
     <div class="desktop-nav">
-      <ul class="nav-row">
-          {{#link-to 'team' class="desktop-button"}}<li {{action "toggleMenu"}}>TEAM</li>{{/link-to}}
-          {{#link-to 'club' class="desktop-button"}}<li {{action "toggleMenu"}}>CLUB</li>{{/link-to}}
-          {{#link-to 'sponsers' class="desktop-button"}}<li {{action "toggleMenu"}}>SUPPORT</li>{{/link-to}}
-          {{#link-to 'contact' class="desktop-button"}}<li {{action "toggleMenu"}}>CONTACT</li>{{/link-to}}
-      </ul>
-      <hr>
+        <ul class="nav-row">
+            <li {{action "toggleMenu"}}>
+                {{#link-to 'team' class="desktop-button"}}TEAM{{/link-to}}
+            </li>
+            <li class="two" {{action "toggleMenu"}}>
+                {{#link-to 'club' class="desktop-button"}}CLUB{{/link-to}}
+            </li>
+            <li class="three" {{action "toggleMenu"}}>
+                {{#link-to 'sponsers' class="desktop-button"}}SUPPORT{{/link-to}}
+            </li>
+            <li class="four" {{action "toggleMenu"}}>
+                {{#link-to 'contact' class="desktop-button"}}CONTACT{{/link-to}}
+            </li>
+            <hr/>
+        </ul>
     </div>
 </div>
 
 {{liquid-outlet}}
-
-<button class="next">
-    {{#if 'index'}}
-        {{#link-to 'members' class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
-    {{else if 'members'}}
-        {{#link-to 'sponsers' class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
-    {{else if 'sponsers'}}
-        {{#link-to 'contact' class="next-arrow"}}{{fa-icon 'angle-double-down' class="next-arrow--icon"}}{{/link-to}}
-    {{/if}}
-</button>
 
 <div class="footer">
     <p class="footer-info">&copy; Taylor Tobin</p>
