@@ -2,20 +2,8 @@
 // CLUB //
 ///////////////////////////////////////////////////////////
 .club {
-    padding-top: 35px;
-    background-color: steelblue;
-}
-
-.club-image {
-    width: 100%;
-    height: 200px;
-    background-image: url("/assets/images/club.jpg");
-    background-size: cover;
-    background-position: center;
-
-    @include breakpoint (medium up) {
-        height: 350px;
-    }
+    margin-top: 80px;
+    background-color: white;
 }
 
 .club-profiles-title {
