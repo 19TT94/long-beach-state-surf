@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    // api: Ember.inject.service(),
+    api: Ember.inject.service(),
 
-    // return this.get('api');
+    model(params) {
+        return this.get('api').getModal();
+    }
 });

@@ -1,0 +1,19 @@
+{{yield}}
+
+<div class="modal {{if close 'hide'}}">
+    <div class="modal__close" {{action 'toggleClose'}}>
+        {{fa-icon "times"}}
+    </div>
+
+    <!-- <h1 class="modal__title">{{modal.title}}</h1> -->
+    <h1 class="modal__title">Nicaragua Team Trip 2017</h1>
+
+    <div class="modal__video">
+        <iframe src="https://player.vimeo.com/video/223620822" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+    <p class="credit">edited: Ruben Munoz</p>
+    <p class="description">
+        Here is a highlight of the team's trip to Nicaragua. Brews, Barrels, and Sandra's cooking.
+    </p>
+</div>
