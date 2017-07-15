@@ -1,0 +1,13 @@
+.modal {
+    z-index: 5;
+    position: absolute;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    opacity: .97;
+    padding: 90px 150px;
+
+    &__title {
+
+    }
+}
