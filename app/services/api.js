@@ -3,7 +3,7 @@ import Ember from 'ember';
 const modal = [
     {
         'title':'Nicaragua Team Trip 2017',
-        'url':''
+        'url':'https://player.vimeo.com/video/223620822'
     }
 ];
 
