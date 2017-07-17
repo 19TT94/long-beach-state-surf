@@ -1,11 +1,15 @@
 import Ember from 'ember';
+// const modal =
+//     {
+//         'title':'Nicaragua Team Trip 2017',
+//         'url':'https://player.vimeo.com/video/223620822'
+//     };
 
-const modal = [
+const modal = 
     {
         'title':'Nicaragua Team Trip 2017',
         'url':'https://player.vimeo.com/video/223620822'
-    }
-];
+    };
 
 const team = [
     {
