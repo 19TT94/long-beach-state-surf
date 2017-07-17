@@ -1,15 +1,12 @@
 import Ember from 'ember';
-// const modal =
-//     {
-//         'title':'Nicaragua Team Trip 2017',
-//         'url':'https://player.vimeo.com/video/223620822'
-//     };
 
-const modal = 
-    {
-        'title':'Nicaragua Team Trip 2017',
-        'url':'https://player.vimeo.com/video/223620822'
-    };
+const modal =
+{
+    'title':'Nicaragua Team Trip 2017',
+    'url':'https://player.vimeo.com/video/223620822',
+    'credit':'Ruben Munoz',
+    'description':'Here is a highlight of the team\'s trip to Nicaragua. Brews, Barrels, and Sandra\'s cooking.'
+};
 
 const team = [
     {
