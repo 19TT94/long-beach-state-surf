@@ -27,19 +27,6 @@
         background-position: center;
         background-size: cover;
         filter: grayscale(100%);
-
-        &.seabass {
-            background-image: url('/assets/images/seabass.jpg');
-        }
-        &.taylor {
-            background-image: url('/assets/images/taylor.jpg');
-        }
-        &.randy {
-            background-image: url('/assets/images/randy.jpg');
-        }
-        &.ian {
-            background-image: url('/assets/images/ian/ian-profile.png');
-        }
     }
 
     &__name {

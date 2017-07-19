@@ -10,18 +10,22 @@ const modal =
 
 const team = [
     {
+        'profile':'/assets/images/seabass.jpg',
         'name': 'Sebastian Ospina',
         'position': 'President'
     },
     {
+        'profile':'/assets/images/taylor.jpg',
         'name': 'Taylor Tobin',
         'position': 'Vice President'
     },
     {
+        'profile':'/assets/images/ian/ian-profile.png',
         'name': 'Ian Tachel',
         'position': 'Former President'
     },
     {
+        'profile':'/assets/images/randy.jpg',
         'name': 'Randy Harp',
         'position': 'Former Vice President'
     }
@@ -34,6 +38,15 @@ export default Ember.Service.extend({
         return new Ember.RSVP.Promise((res, rej) => {
             // on sucess
             res(modal);
+            //on failure
+            rej(reason);
+        });
+    },
+
+    getTeam() {
+        return new Ember.RSVP.Promise((res, rej) => {
+            // on sucess
+            res(team);
             //on failure
             rej(reason);
         });

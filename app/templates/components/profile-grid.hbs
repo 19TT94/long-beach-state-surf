@@ -1,22 +1,11 @@
 {{yield}}
 
 <div class="row center">
-    <div class="column small-12 medium-3 profile">
-        <div class="profile__image seabass"></div>
-        <h2 class="profile__name">Sebastian Ospina</h2>
-        <p class="profile__postion">President</p>
-    </div>
-    <div class="column small-12 medium-3 profile">
-        <div class="profile__image taylor"></div>
-        <h2 class="profile__name">{{team.name}}</h2>
-        <p class="profile__postion">{{team.service}}</p>
-    </div>
-    <div class="column small-12 medium-3 profile">
-        <div class="profile__image randy"></div>
-        <h2 class="profile__name">Randy Harp</h2>
-    </div>
-    <div class="column small-12 medium-3 profile">
-        <div class="profile__image ian"></div>
-        <h2 class="profile__name">Ian Tachell</h2>
-    </div>
+    {{#each model as |team|}}
+        <div class="column small-12 medium-3 profile">
+            <div class="profile__image" style="background-image: url('{{team.profile}}')"></div>
+            <h2 class="profile__name">{{team.name}}</h2>
+            <p class="profile__postion">{{team.position}}</p>
+        </div>
+    {{/each}}
 </div>
