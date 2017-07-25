@@ -6,6 +6,10 @@
     background-color: white;
 }
 
+.profile-modal {
+    display: none;
+}
+
 .team-profiles {
     @media (min-width: 768px) {
         margin: 30px;

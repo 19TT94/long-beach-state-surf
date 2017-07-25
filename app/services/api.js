@@ -12,22 +12,38 @@ const team = [
     {
         'profile':'/assets/images/seabass.jpg',
         'name': 'Sebastian Ospina',
-        'position': 'President'
+        'position': 'President',
+        'major':'Computer Science',
+        'board':'5\'6\'\' Hypto Crypto',
+        'home':'San Luis Obispo, Ca',
+        'favorite':'Craig Anderson'
     },
     {
         'profile':'/assets/images/taylor.jpg',
         'name': 'Taylor Tobin',
-        'position': 'Vice President'
+        'position': 'Vice President',
+        'major':'Computer Science',
+        'board':'5\'6\'\' Hypto Crypto',
+        'home':'San Luis Obispo, Ca',
+        'favorite':'Craig Anderson'
     },
     {
         'profile':'/assets/images/ian/ian-profile.png',
         'name': 'Ian Tachel',
-        'position': 'Former President'
+        'position': 'Former President',
+        'major':'Computer Science',
+        'board':'5\'6\'\' Hypto Crypto',
+        'home':'San Luis Obispo, Ca',
+        'favorite':'Craig Anderson'
     },
     {
         'profile':'/assets/images/randy.jpg',
         'name': 'Randy Harp',
-        'position': 'Former Vice President'
+        'position': 'Former Vice President',
+        'major':'Computer Science',
+        'board':'5\'6\'\' Hypto Crypto',
+        'home':'San Luis Obispo, Ca',
+        'favorite':'Craig Anderson'
     }
 ];
 
