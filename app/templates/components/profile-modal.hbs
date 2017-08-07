@@ -1,8 +1,10 @@
 {{yield}}
 
-<div class="profile-modal">
+<div class="profile-modal {{if close 'hide'}}">
     {{#each model as |team|}}
         <h1 class="profile-modal__title">{{team.name}}</h1>
         <p>{{team.major}}</p>
     {{/each}}
+
+    <div class="profile-modal--close" {{action 'toggleClose'}}>Close</div>
 </div>

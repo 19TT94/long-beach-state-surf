@@ -3,7 +3,7 @@
 <div class="row center">
     {{#each model as |team|}}
         <div class="column small-12 medium-3 profile">
-            <div class="profile__image" style="background-image: url('{{team.profile}}')"></div>
+            <div class="profile__image" style="background-image: url('{{team.profile}}')" {{action 'toggleModal'}}></div>
             <h2 class="profile__name">{{team.name}}</h2>
             <p class="profile__postion">{{team.position}}</p>
         </div>
