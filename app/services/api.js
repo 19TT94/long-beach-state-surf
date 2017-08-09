@@ -10,27 +10,27 @@ const modal =
 
 const events = [
     {
-        'name': 'Blacks Contest',
+        'event': 'Blacks Contest',
         'location': 'San Diego',
         'date': 'October 28-29'
     },
     {
-        'name': 'Cardiff by the Sea',
+        'event': 'Cardiff by the Sea',
         'location': 'Seaside Reef',
         'date': 'November 11-12'
     },
     {
-        'name': 'The Lane',
+        'event': 'The Lane',
         'location': 'Santa Cruz',
         'date': 'December 2-3'
     },
     {
-        'name': '9th St.',
+        'event': '9th St.',
         'location': 'Huntington Beach',
         'date': 'January 20-21'
     },
     {
-        'name': 'Ventura Harbor',
+        'event': 'Ventura Harbor',
         'location': 'Ventura',
         'date': 'February 3'
     }
