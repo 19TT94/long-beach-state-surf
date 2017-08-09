@@ -8,6 +8,34 @@ const modal =
     'description':'Here is a highlight of the team\'s trip to Nicaragua. Brews, Barrels, and Sandra\'s cooking.'
 };
 
+const events = [
+    {
+        'name': 'Blacks Contest',
+        'location': 'San Diego',
+        'date': 'October 28-29'
+    },
+    {
+        'name': 'Cardiff by the Sea',
+        'location': 'Seaside Reef',
+        'date': 'November 11-12'
+    },
+    {
+        'name': 'The Lane',
+        'location': 'Santa Cruz',
+        'date': 'December 2-3'
+    },
+    {
+        'name': '9th St.',
+        'location': 'Huntington Beach',
+        'date': 'January 20-21'
+    },
+    {
+        'name': 'Ventura Harbor',
+        'location': 'Ventura',
+        'date': 'February 3'
+    }
+];
+
 const team = [
     {
         'profile':'/assets/images/seabass.jpg',
@@ -47,6 +75,62 @@ const team = [
     }
 ];
 
+const club = [
+    {
+        'profile':'http://placehold.it/500x500',
+        'name':'Could be you!',
+        'position':'President',
+    },
+    {
+        'profile':'http://placehold.it/500x500',
+        'name':'Could be you!',
+        'position':'Vice President',
+    },
+    {
+        'profile':'http://placehold.it/500x500',
+        'name':'Could be you!',
+        'position':'Treasurer',
+    }
+];
+
+const support = [
+    {
+        'sponser':'http://placehold.it/500x500',
+        'url':''
+    },
+    {
+        'sponser':'http://placehold.it/500x500',
+        'url':''
+    },
+    {
+        'sponser':'http://placehold.it/500x500',
+        'url':''
+    },
+    {
+        'sponser':'http://placehold.it/500x500',
+        'url':''
+    },
+    {
+        'sponser':'http://placehold.it/500x500',
+        'url':''
+    },
+    {
+        'sponser':'http://placehold.it/500x500',
+        'url':''
+    }
+];
+
+const community = [
+    {
+        'title':'event',
+        'description':'lkfjsldjf lsk dfls djflskdf slf sd.'
+    },
+    {
+        'title':'event',
+        'description':'lkfjsldjf lsk dfls djflskdf slf sd.'
+    }
+];
+
 const reason = 'There was an error.';
 
 export default Ember.Service.extend({
@@ -59,6 +143,15 @@ export default Ember.Service.extend({
         });
     },
 
+    getEvents() {
+        return new Ember.RSVP.Promise((res, rej) => {
+            // on sucess
+            res(events);
+            //on failure
+            rej(reason);
+        });
+    },
+
     getTeam() {
         return new Ember.RSVP.Promise((res, rej) => {
             // on sucess
@@ -66,5 +159,33 @@ export default Ember.Service.extend({
             //on failure
             rej(reason);
         });
+    },
+
+    getClub() {
+        return new Ember.RSVP.Promise((res, rej) => {
+            // on sucess
+            res(club);
+            //on failure
+            rej(reason);
+        });
+    },
+
+    getSupport() {
+        return new Ember.RSVP.Promise((res, rej) => {
+            // on sucess
+            res(support);
+            //on failure
+            rej(reason);
+        });
+    },
+
+    getCommunity() {
+        return new Ember.RSVP.Promise((res, rej) => {
+            // on sucess
+            res(community);
+            //on failure
+            rej(reason);
+        });
     }
+
 });

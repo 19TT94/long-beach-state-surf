@@ -2,28 +2,17 @@
 <div class="club">
     <div class="club-profiles">
         <h1 class="club-profiles-title center">The Club</h1>
+
         <div class="row center">
-            <div class="column small-12 medium-3 profile">
-                <div class="profile__image"></div>
-                <h2 class="profile__name"></h2>
-                <p class="profile__postion">President</p>
-            </div>
-            <div class="column small-12 medium-3 profile">
-                <div class="profile__image"></div>
-                <h2 class="profile__name"></h2>
-                <p class="profile__postion">Vice President</p>
-            </div>
-            <div class="column small-12 medium-3 profile">
-                <div class="profile__image"></div>
-                <h2 class="profile__name"></h2>
-                <p class="profile__postion">Treasurer</p>
-            </div>
-            <div class="column small-12 medium-3 profile">
-                <div class="profile__image"></div>
-                <h2 class="profile__name"></h2>
-                <p class="profile__postion">Event Coordinator</p>
-            </div>
+            {{#each model as |club|}}
+                <div class="column small-12 medium-4 profile">
+                    <div class="profile__image" style="background-image: url('{{club.profile}}')" {{action 'toggleModal'}}></div>
+                    <h2 class="profile__name">{{club.name}}</h2>
+                    <p class="profile__postion">{{club.position}}</p>
+                </div>
+            {{/each}}
         </div>
+        
     </div>
     <div class="calendar">
         <h1 class="calendar-title">Event Schedule</h1>
