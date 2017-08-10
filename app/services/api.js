@@ -65,7 +65,7 @@ const team = [
         'favorite':'Craig Anderson'
     },
     {
-        'profile':'/assets/images/randy.jpg',
+        'profile':'https://placehold.it/500x500',
         'name': 'Randy Harp',
         'position': 'Former Vice President',
         'major':'Computer Science',
