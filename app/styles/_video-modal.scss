@@ -5,7 +5,11 @@
     width: 100vw;
     height: 100vh;
     opacity: .97;
-    padding: 90px 150px;
+    padding: 45px;
+
+    @include breakpoint (medium up) {
+        padding: 90px 150px;
+    }
 
     @include breakpoint (large up) {
         padding: 65px 250px;
