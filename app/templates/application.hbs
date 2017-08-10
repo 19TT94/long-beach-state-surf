@@ -1,4 +1,7 @@
-<div class="nav">
+<div class="nav shadow-bottom">
+
+    {{video-modal model=model}}
+
     <div class="nav-left">
         {{#link-to 'index' class="nav-logo"}}{{/link-to}}
         <!-- <h1 class="nav-title">LBSU SURF</h1>
@@ -26,7 +29,7 @@
     </div>
     <div class="desktop-nav">
         <ul class="nav-row">
-            <li {{action "toggleMenu"}}>
+            <li class="one" {{action "toggleMenu"}}>
                 {{#link-to 'team' class="desktop-button"}}TEAM{{/link-to}}
             </li>
             <li class="two" {{action "toggleMenu"}}>
@@ -41,7 +44,16 @@
             <hr/>
         </ul>
     </div>
+
+    <!-- Animations -->
+    <img class="plane" src="/assets/images/beach-plane.png">
+    <img class="plane-two" src="/assets/images/beach-plane2.png">
+    <div class="balloon-wrapper">
+        <img class="balloon-wrapper--balloon" src="/assets/images/beach-balloon.png">
+    </div>
+
 </div>
+
 
 {{liquid-outlet}}
 

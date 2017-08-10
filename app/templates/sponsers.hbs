@@ -1,29 +1,21 @@
 {{liquid-outlet}}
 <div class="sponsers">
-    <h1 class="sponsers-title">Supporters</h1>
-    <div class="sponsers-block">
-        <div class="row">
-            <div class="column small-6">
-                <div class="sponser"><a href="http://www.benaipa.com/"><img class="sponser-image" src="/assets/images/aipa.gif"></a></div>
-            </div>
-            <div class="column small-6">
-                <div class="sponser"><a href="http://www.surfboardsbystamps.com/#about"><img class="sponser-image" src="/assets/images/stamps.jpg"></a></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column small-6">
-                <div class="sponser"><a href="http://www.coastal-collective.com/"><img class="sponser-image" src="/assets/images/coastal-collective.jpg"></a></div>
-            </div>
-            <div class="column small-6">
-                <div class="sponser"><a href="http://www.trumoo.com/"><img class="sponser-image" src="/assets/images/trumoo.png"></a></div>
+    <div class="row">
+        <div class="column small-12 medium-4">
+            <h1 class="sponsers-title">Supporters</h1>
+            <div class="sponsers-block">
+                <div class="row">
+                    {{#each model as |support|}}
+                        <div class="column small-6">
+                            <div class="sponser"><a href="{{support.url}}"><img class="sponser-image" src="{{support.sponser}}"></a></div>
+                        </div>
+                    {{/each}}
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="column small-6">
-                <div class="sponser"><a href="http://www.lasbarcas.com"><img class="sponser-image" src="/assets/images/lasbarcas.png"></a></div>
-            </div>
-            <div class="column small-6">
-                <div class="sponser"><a href="#"><img class="sponser-image" src="/assets/images/aipa.gif"></a></div>
+        <div class="column medium-8">
+            <div class="community shadow-bottom">
+                <h1 class="community__title">Community</h1>
             </div>
         </div>
     </div>

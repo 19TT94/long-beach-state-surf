@@ -1,16 +1,28 @@
 //////////////
 // SPONSERS //
 ///////////////////////////////////////////////////////////
+.container {
+    margin: 0;
+}
+
 .sponsers-title {
     padding-top: 90px;
     font-size: 1.5em;
     text-align: center;
     color: #fff;
     margin: 10px 0px 0px 0px;
+
+    @include breakpoint (medium up) {
+        padding: 110px 1rem 0;
+    }
 }
 
 .sponsers-block {
     text-align: center;
+
+    @include breakpoint (medium up) {
+        text-align: left;
+    }
 }
 
 .sponser {
@@ -25,11 +37,27 @@
     margin: 10px;
 
     @include breakpoint (medium up) {
-        width: 10rem;
+        margin: 1rem;
     }
 }
 
 .sponser-image {
     width: 100%;
     height: auto;
+}
+
+.community {
+    display: none;
+    background: white;
+    margin: 110px 1rem 0;
+    height: 100%;
+
+    @include breakpoint (medium up) {
+        display: block;
+    }
+
+    &__title {
+        padding: 1rem;
+        text-align: center;
+    }
 }

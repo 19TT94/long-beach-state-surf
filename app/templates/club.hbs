@@ -1,28 +1,18 @@
 {{liquid-outlet}}
-<div class="club">
-    <div class="club-image"></div>
+<div class="club shadow-top">
     <div class="club-profiles">
         <h1 class="club-profiles-title center">The Club</h1>
+
         <div class="row center">
-            <div class="column small-12 medium-6 profile">
-                {{#link-to 'club'}}<img class="profile-image" src="http://placehold.it/150x150">{{/link-to}}
-                <h2 class="profile-name">President</h2>
-            </div>
-            <div class="column small-12 medium-6 profile">
-                {{#link-to 'club'}}<img class="profile-image" src="http://placehold.it/150x150">{{/link-to}}
-                <h2 class="profile-name">Vice President</h2>
-            </div>
+            {{#each model as |club|}}
+                <div class="column small-12 medium-4 profile">
+                    <div class="profile__image" style="background-image: url('{{club.profile}}')" {{action 'toggleModal'}}></div>
+                    <h2 class="profile__name">{{club.name}}</h2>
+                    <p class="profile__postion">{{club.position}}</p>
+                </div>
+            {{/each}}
         </div>
-        <div class="row center">
-            <div class="column small-12 medium-6 profile">
-                {{#link-to 'club'}}<img class="profile-image" src="http://placehold.it/150x150">{{/link-to}}
-                <h2 class="profile-name">Treasurer</h2>
-            </div>
-            <div class="column small-12 medium-6 profile">
-                {{#link-to 'club'}}<img class="profile-image" src="http://placehold.it/150x150">{{/link-to}}
-                <h2 class="profile-name">Event Coordinator</h2>
-            </div>
-        </div>
+
     </div>
     <div class="calendar">
         <h1 class="calendar-title">Event Schedule</h1>

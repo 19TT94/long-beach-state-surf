@@ -2,19 +2,45 @@
 // TEAM //
 ///////////////////////////////////////////////////////////
 .team {
-    padding-top: 35px;
-    background-color: darkslategray;
+    margin-top: 80px;
+    background-color: white;
 }
 
-.team-image {
+.profile-modal {
+    opacity: 0;
+    position: absolute;
     width: 100%;
-    height: 200px;
-    background-image: url("/assets/images/team2.jpeg");
-    background-size: cover;
-    background-position: top;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+}
 
-    @include breakpoint (medium up) {
-        height: 350px;
+.team-profiles {
+    @media (min-width: 768px) {
+        margin: 30px;
+        text-align: center;
+    }
+}
+
+.team-profiles-title {
+    padding: 20px;
+    margin: 0;
+}
+
+.profile {
+    &__image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: grayscale(100%);
+    }
+
+    &__name {
+        font-size: 1.5em;
     }
 }
 
@@ -48,22 +74,5 @@
         left: 0;
         width: 100%;
         height: 100%;
-    }
-}
-
-.team-profiles-title {
-    padding: 20px;
-    margin: 0;
-}
-
-.profile-image {
-    width: 150px;
-    height: auto;
-}
-
-.team-profiles {
-    @media (min-width: 768px) {
-        margin: 50px;
-        text-align: center;
     }
 }
