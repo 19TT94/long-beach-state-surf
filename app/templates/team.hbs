@@ -9,10 +9,10 @@
     </div>
     <div class="calendar">
         <h1 class="calendar-title">Event Schedule</h1>
-        {{#each model as |events|}}
-            <h3 class="event__title">{{events.spot}}</h3>
-            <p>{{events.location}}</p>
-            <p>{{events.date}}</p>
+        {{#each model.events as |event|}}
+            <h3 class="event__title">{{event.spot}}</h3>
+            <p>{{event.location}}</p>
+            <p>{{event.date}}</p>
         {{/each}}
         <!-- <div class="calendar-container">
             <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=i5cdvf72ort1rnkon5asmnfkho%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>

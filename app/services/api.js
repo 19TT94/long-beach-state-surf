@@ -148,7 +148,7 @@ export default Ember.Service.extend({
             // on sucess
             res(events);
             //on failure
-            rej(reason);
+            //rej(reason);
         });
     },
 
@@ -157,7 +157,7 @@ export default Ember.Service.extend({
             // on sucess
             res(team);
             //on failure
-            rej(reason);
+            //rej(reason);
         });
     },
 
@@ -166,7 +166,7 @@ export default Ember.Service.extend({
             // on sucess
             res(club);
             //on failure
-            rej(reason);
+            //rej(reason);
         });
     },
 
@@ -175,7 +175,7 @@ export default Ember.Service.extend({
             // on sucess
             res(support);
             //on failure
-            rej(reason);
+            //rej(reason);
         });
     },
 
@@ -184,7 +184,7 @@ export default Ember.Service.extend({
             // on sucess
             res(community);
             //on failure
-            rej(reason);
+            //rej(reason);
         });
     }
 
