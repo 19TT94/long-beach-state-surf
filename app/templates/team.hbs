@@ -1,6 +1,7 @@
 {{liquid-outlet}}
 <div class="team shadow-top">
     {{profile-modal model=model}}
+
     <div class="team-profiles">
         <h1 class="team-profiles-title center">The Team</h1>
 
@@ -9,13 +10,10 @@
     </div>
     <div class="calendar">
         <h1 class="calendar-title">Event Schedule</h1>
-        <!-- {{#each model as |events|}}
-            <h1 class="event__title">{{events.name}}</h1>
-            <p>{{events.location}}</p>
-            <p>{{events.date}}</p>
-        {{/each}} -->
-        <div class="calendar-container">
-            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=i5cdvf72ort1rnkon5asmnfkho%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
+        {{#each model.events as |event|}}
+            <h3 class="event__title">{{event.spot}}</h3>
+            <p>{{event.location}}</p>
+            <p>{{event.date}}</p>
+        {{/each}}
     </div>
 </div>

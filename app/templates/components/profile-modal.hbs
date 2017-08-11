@@ -1,7 +1,7 @@
 {{yield}}
 
 <div class="profile-modal {{if close 'hide'}}">
-    {{#each model as |team|}}
+    {{#each model.team as |team|}}
         <h1 class="profile-modal__title">{{team.name}}</h1>
         <p>{{team.major}}</p>
     {{/each}}

@@ -5,7 +5,7 @@
             <h1 class="sponsers-title">Supporters</h1>
             <div class="sponsers-block">
                 <div class="row">
-                    {{#each model as |support|}}
+                    {{#each model.supporters as |support|}}
                         <div class="column small-6">
                             <div class="sponser"><a href="{{support.url}}"><img class="sponser-image" src="{{support.sponser}}"></a></div>
                         </div>
@@ -14,8 +14,17 @@
             </div>
         </div>
         <div class="column medium-8">
-            <div class="community shadow-bottom">
-                <h1 class="community__title">Community</h1>
+            <div class="community-desktop shadow-bottom">
+                <h1 class="community-desktop__title">Community News</h1>
+                {{#each model.community as |event|}}
+                    <h3>{{event.title}}</h3>
+                    <span>{{event.date}}</span>
+                    <p>{{event.description}}</p>
+                {{/each}}
+
+                {{#link-to 'contact' class="ticket"}}Get Involved{{/link-to}}
+                <a href='https://www.gofundme.com/493ecdc' class="ticket">Donate</a>
+
             </div>
         </div>
     </div>

@@ -1,3 +1,14 @@
-.community {
-    // padding-top: 65px;
+.community-mobile {
+    background: white;
+    margin: 110px 1rem 0;
+    height: 100%;
+    padding: 1rem 2rem 2rem;
+
+    @include breakpoint (medium up) {
+        display: block;
+    }
+
+    &__title {
+        text-align: center;
+    }
 }
