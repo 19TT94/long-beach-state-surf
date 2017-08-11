@@ -46,18 +46,18 @@
     height: auto;
 }
 
-.community {
+.community-desktop {
     display: none;
     background: white;
     margin: 110px 1rem 0;
     height: 100%;
+    padding: 1rem 2rem 2rem;
 
     @include breakpoint (medium up) {
         display: block;
     }
 
     &__title {
-        padding: 1rem;
-        text-align: center;
+        font-size: 1.5em;
     }
 }

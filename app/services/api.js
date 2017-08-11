@@ -93,7 +93,7 @@ const club = [
     }
 ];
 
-const support = [
+const supporters = [
     {
         'sponser':'http://placehold.it/500x500',
         'url':''
@@ -122,12 +122,9 @@ const support = [
 
 const community = [
     {
-        'title':'event',
-        'description':'lkfjsldjf lsk dfls djflskdf slf sd.'
-    },
-    {
-        'title':'event',
-        'description':'lkfjsldjf lsk dfls djflskdf slf sd.'
+        'title':'International Coastal Cleanup',
+        'date':'Saturday, September 16th',
+        'description':'Plastic in the ocean and on the the beach is a huge problem for our environment, it ruins our beaches, and it needs to stop. The only way this problem can be solved is if we all ban together and fix it. The watermen and women of LBSU can make a huge difference at our beaches locally. Join the LBSU Surf Team/Club in this year\'s coastal cleanup. We\'ll see you out there!'
     }
 ];
 
@@ -170,10 +167,10 @@ export default Ember.Service.extend({
         });
     },
 
-    getSupport() {
+    getSupporters() {
         return new Ember.RSVP.Promise((res, rej) => {
             // on sucess
-            res(support);
+            res(supporters);
             //on failure
             //rej(reason);
         });

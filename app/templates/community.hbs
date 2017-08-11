@@ -1,3 +1,14 @@
 {{liquid-outlet}}
 
-<h1>Community</h1>
+<div class="community-mobile shadow-bottom">
+    <h1 class="community-mobile__title">Community</h1>
+    {{#each model as |event|}}
+        <h3>{{event.title}}</h3>
+        <span>{{event.date}}</span>
+        <p>{{event.description}}</p>
+    {{/each}}
+
+    {{#link-to 'contact' class="ticket"}}Get Involved{{/link-to}}
+    <a href='https://www.gofundme.com/493ecdc' class="ticket">Donate</a>
+
+</div>

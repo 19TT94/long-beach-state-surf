@@ -4,6 +4,9 @@ export default Ember.Route.extend({
     api: Ember.inject.service(),
 
     model(params) {
-        return this.get('api').getSupport();
+        return Ember.RSVP.hash({
+            supporters: this.get('api').getSupporters(),
+            community: this.get('api').getCommunity()
+        });
     }
 });
