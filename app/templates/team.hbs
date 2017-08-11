@@ -8,12 +8,13 @@
         {{profile-grid model=model}}
 
     </div>
-    <div class="calendar">
-        <h1 class="calendar-title">Event Schedule</h1>
-        {{#each model.events as |event|}}
-            <h3 class="event__title">{{event.spot}}</h3>
-            <p>{{event.location}}</p>
-            <p>{{event.date}}</p>
-        {{/each}}
+    <div class="events">
+        <h1 class="events-title">Event Schedule</h1>
+        <ul>
+            {{#each model.events as |event|}}
+                <li class="event__title">{{event.spot}} <span><i>{{event.date}}</i></span></li>
+                    <p>{{event.location}}</p>
+            {{/each}}
+        </ul>
     </div>
 </div>

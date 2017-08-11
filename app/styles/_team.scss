@@ -44,35 +44,21 @@
     }
 }
 
-.calendar-title {
-    padding: 20px 20px 0px 20px;
+.events-title {
+    padding: 20px;
     margin-bottom: 0;
+    font-size: 2em;
 }
 
-.calendar {
+.events {
     background-color: lightgray;
-    padding-bottom: 100px;
+    padding: 2rem;
 
-    @media (min-width: 768px) {
-        padding: 0px 250px 100px 250px;
+    li {
+        font-size: 1.5em;
     }
 
-    @media (min-width: 1024px) {
-        padding: 0px 350px 100px 350px;
-    }
-}
-
-.calendar-container {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0;
-    overflow: hidden;
-
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    span {
+        font-size: .75em;
     }
 }
