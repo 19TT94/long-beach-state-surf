@@ -133,55 +133,37 @@ const reason = 'There was an error.';
 export default Ember.Service.extend({
     getModal() {
         return new Ember.RSVP.Promise((res, rej) => {
-            // on sucess
             res(modal);
-            //on failure
-            rej(reason);
         });
     },
 
     getEvents() {
         return new Ember.RSVP.Promise((res, rej) => {
-            // on sucess
             res(events);
-            //on failure
-            //rej(reason);
         });
     },
 
     getTeam() {
         return new Ember.RSVP.Promise((res, rej) => {
-            // on sucess
             res(team);
-            //on failure
-            //rej(reason);
         });
     },
 
     getClub() {
         return new Ember.RSVP.Promise((res, rej) => {
-            // on sucess
             res(club);
-            //on failure
-            //rej(reason);
         });
     },
 
     getSupporters() {
         return new Ember.RSVP.Promise((res, rej) => {
-            // on sucess
             res(supporters);
-            //on failure
-            //rej(reason);
         });
     },
 
     getCommunity() {
         return new Ember.RSVP.Promise((res, rej) => {
-            // on sucess
             res(community);
-            //on failure
-            //rej(reason);
         });
     }
 
