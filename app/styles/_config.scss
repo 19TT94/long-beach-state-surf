@@ -1,3 +1,13 @@
+// Variables
+$black: #000;
+$white: #fff;
+
+// Elements
+a:hover {
+    color: $black;
+}
+
+// Classes
 .home, .members, .sponsers {
     width: 100vw;
     height: 100vh;

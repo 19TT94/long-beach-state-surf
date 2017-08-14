@@ -16,7 +16,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 2;
     display: inline-block;
     width: 100vw;
     background-color: #fff;
@@ -149,6 +149,7 @@ hr {
 .nav-right {
     float: right;
     width: 50%;
+    z-index: 5;
 }
 
 .nav-icon {
@@ -156,6 +157,7 @@ hr {
     font-size: 3em;
     float: right;
     padding: 10px;
+    z-index: 5;
 }
 
 .nav-menu {
@@ -183,6 +185,7 @@ hr {
         font-size: 2em;
         margin: 10px;
         i {color: #000;}
+        z-index: 5;
     }
 }
 
@@ -190,6 +193,7 @@ hr {
     list-style: none;
     padding: 0;
     margin: 0;
+    z-index: 5;
 }
 
 .nav-link {
@@ -198,6 +202,7 @@ hr {
     display: block;
     text-decoration: none;
     color: #000;
+    z-index: 5;
 }
 
 .nav-back {
