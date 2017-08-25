@@ -163,6 +163,10 @@ const club = [
 
 const supporters = [
     {
+        'sponser':'/assets/images/ripcurl.gif',
+        'url':'https://www.ripcurl.com'
+    },
+    {
         'sponser':'/assets/images/kalunalu.jpg',
         'url':'https://www.kalunalu.com'
     },
