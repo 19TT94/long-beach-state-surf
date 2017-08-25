@@ -35,8 +35,8 @@
         <h1 class="events-title">Event Schedule</h1>
         <ul>
             {{#each model.events as |event|}}
-                <li class="event__title">{{event.spot}} <span><i>{{event.date}}</i></span></li>
-                    <p>{{event.location}}</p>
+                <li class="event__title">{{event.event}} <span><i>{{event.date}}</i></span></li>
+                    <p>{{event.location}} {{#if event.time}}| {{event.time}}{{/if}}</p>
             {{/each}}
         </ul>
     </div>

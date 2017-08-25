@@ -10,27 +10,51 @@ const modal =
 
 const events = [
     {
-        'spot': 'Blacks Contest',
+        'event': 'WOW Week',
+        'location': 'Central Quad',
+        'date': 'September 6-7th',
+        'time': '11a-2p'
+    },
+    {
+        'event': 'Smorgasport',
+        'location': 'USU',
+        'date': 'September 8th',
+        'time': '7p-11p'
+    },
+    {
+        'event': 'Team Tryouts',
+        'location': '9th St. Huntington',
+        'date': 'September 15th',
+        'time': ' 7a-9a'
+    },
+    {
+        'event': 'Beach Cleanup',
+        'location': 'Belmont Plaza Pool',
+        'date': 'September 16',
+        'time': '8a-10a'
+    },
+    {
+        'event': 'Blacks Contest',
         'location': 'San Diego',
         'date': 'October 28-29'
     },
     {
-        'spot': 'Cardiff by the Sea',
+        'event': 'Cardiff by the Sea',
         'location': 'Seaside Reef',
         'date': 'November 11-12'
     },
     {
-        'spot': 'The Lane',
+        'event': 'The Lane',
         'location': 'Santa Cruz',
         'date': 'December 2-3'
     },
     {
-        'spot': '9th St.',
+        'event': '9th St.',
         'location': 'Huntington Beach',
         'date': 'January 20-21'
     },
     {
-        'spot': 'Ventura Harbor',
+        'event': 'Ventura Harbor',
         'location': 'Ventura',
         'date': 'February 3'
     }
@@ -82,15 +106,24 @@ const team = [
     //     'home':'',
     //     'favorite':''
     // },
-    // {
-    //     'profile':'/assets/images/ian/ian-profile.png',
-    //     'name': 'Randy Harp',
-    //     'position': '',
-    //     'major':'',
-    //     'board':'',
-    //     'home':'',
-    //     'favorite':''
-    // },
+    {
+        'profile':'/assets/images/randy/randy-profile.jpg',
+        'name': 'Randy Harp',
+        'position': '',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
+    },
+    {
+        'profile':'/assets/images/kyle/kyle-profile.jpg',
+        'name': 'Kyle Smith',
+        'position': '',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
+    },
     {
         'profile':'/assets/images/mark/mark-profile.jpg',
         'name': 'Mark Macintosh',
