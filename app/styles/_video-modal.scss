@@ -1,4 +1,8 @@
 .modal {
+    .team &, .club &, .members &, .sponsers &, .community &, .contact & {
+        display: none;
+    }
+
     z-index: 5;
     position: absolute;
     background: white;

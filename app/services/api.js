@@ -38,16 +38,16 @@ const events = [
 
 const team = [
     {
-        'profile':'/assets/images/seabass.jpg',
+        'profile':'/assets/images/sebastian/sebastian-profile.jpg',
         'name': 'Sebastian Ospina',
         'position': 'President',
-        'major':'Computer Science',
-        'board':'5\'6\'\' Hypto Crypto',
-        'home':'San Luis Obispo, Ca',
-        'favorite':'Craig Anderson'
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
     },
     {
-        'profile':'/assets/images/taylor.jpg',
+        'profile':'/assets/images/taylor/taylor-profile.jpg',
         'name': 'Taylor Tobin',
         'position': 'Vice President',
         'major':'Computer Science',
@@ -56,22 +56,49 @@ const team = [
         'favorite':'Craig Anderson'
     },
     {
-        'profile':'/assets/images/ian/ian-profile.png',
-        'name': 'Ian Tachel',
-        'position': 'Former President',
-        'major':'Computer Science',
-        'board':'5\'6\'\' Hypto Crypto',
-        'home':'San Luis Obispo, Ca',
-        'favorite':'Craig Anderson'
+        'profile':'/assets/images/emil/emil-profile.jpg',
+        'name': 'Emil Alvarez',
+        'position': 'Social Media Strategist',
+        'major':'Psychology',
+        'board':'',
+        'home':'',
+        'favorite':''
     },
     {
-        'profile':'https://placehold.it/500x500',
-        'name': 'Randy Harp',
-        'position': 'Former Vice President',
-        'major':'Computer Science',
-        'board':'5\'6\'\' Hypto Crypto',
-        'home':'San Luis Obispo, Ca',
-        'favorite':'Craig Anderson'
+        'profile':'/assets/images/ben/ben-profile.jpg',
+        'name': 'Ben Lalande',
+        'position': 'Lead Videographer/Photographer',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
+    },
+    // {
+    //     'profile':'/assets/images/ian/ian-profile.png',
+    //     'name': 'Ian Tachel',
+    //     'position': '',
+    //     'major':'',
+    //     'board':'',
+    //     'home':'',
+    //     'favorite':''
+    // },
+    // {
+    //     'profile':'/assets/images/ian/ian-profile.png',
+    //     'name': 'Randy Harp',
+    //     'position': '',
+    //     'major':'',
+    //     'board':'',
+    //     'home':'',
+    //     'favorite':''
+    // },
+    {
+        'profile':'/assets/images/mark/mark-profile.jpg',
+        'name': 'Mark Macintosh',
+        'position': '',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
     }
 ];
 
@@ -95,28 +122,12 @@ const club = [
 
 const supporters = [
     {
-        'sponser':'http://placehold.it/500x500',
-        'url':''
+        'sponser':'/assets/images/kalunalu.jpg',
+        'url':'https://www.kalunalu.com'
     },
     {
-        'sponser':'http://placehold.it/500x500',
-        'url':''
-    },
-    {
-        'sponser':'http://placehold.it/500x500',
-        'url':''
-    },
-    {
-        'sponser':'http://placehold.it/500x500',
-        'url':''
-    },
-    {
-        'sponser':'http://placehold.it/500x500',
-        'url':''
-    },
-    {
-        'sponser':'http://placehold.it/500x500',
-        'url':''
+        'sponser':'/assets/images/calidog.png',
+        'url':'https://www.calidogpomade.com'
     }
 ];
 
@@ -132,37 +143,37 @@ const reason = 'There was an error.';
 
 export default Ember.Service.extend({
     getModal() {
-        return new Ember.RSVP.Promise((res, rej) => {
+        return new Ember.RSVP.Promise(res => {
             res(modal);
         });
     },
 
     getEvents() {
-        return new Ember.RSVP.Promise((res, rej) => {
+        return new Ember.RSVP.Promise(res => {
             res(events);
         });
     },
 
     getTeam() {
-        return new Ember.RSVP.Promise((res, rej) => {
+        return new Ember.RSVP.Promise(res => {
             res(team);
         });
     },
 
     getClub() {
-        return new Ember.RSVP.Promise((res, rej) => {
+        return new Ember.RSVP.Promise(res => {
             res(club);
         });
     },
 
     getSupporters() {
-        return new Ember.RSVP.Promise((res, rej) => {
+        return new Ember.RSVP.Promise(res => {
             res(supporters);
         });
     },
 
     getCommunity() {
-        return new Ember.RSVP.Promise((res, rej) => {
+        return new Ember.RSVP.Promise(res => {
             res(community);
         });
     }
