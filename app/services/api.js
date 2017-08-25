@@ -67,7 +67,7 @@ const team = [
     {
         'profile':'/assets/images/ben/ben-profile.jpg',
         'name': 'Ben Lalande',
-        'position': 'Lead Videographer/Photographer',
+        'position': 'Lead Videographer',
         'major':'',
         'board':'',
         'home':'',
@@ -99,6 +99,14 @@ const team = [
         'board':'',
         'home':'',
         'favorite':''
+    }
+];
+
+const videos = [
+    {
+        'url':'https://player.vimeo.com/video/153442146',
+        'title':'LBSU Surfing',
+        'credit':'Ben Lalande'
     }
 ];
 
@@ -157,6 +165,12 @@ export default Ember.Service.extend({
     getTeam() {
         return new Ember.RSVP.Promise(res => {
             res(team);
+        });
+    },
+
+    getVideos() {
+        return new Ember.RSVP.Promise(res => {
+            res(videos);
         });
     },
 

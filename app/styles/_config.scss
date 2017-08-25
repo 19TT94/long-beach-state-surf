@@ -1,10 +1,15 @@
 // Variables
 $black: #000;
 $white: #fff;
+$gold: #f9a600;
 
 // Elements
 a:hover {
     color: $black;
+}
+
+ul {
+    list-style: none;
 }
 
 // Classes
@@ -26,7 +31,7 @@ a:hover {
     &__arrow {
         margin: 0 auto;
         z-index: 99;
-        color: #f9a600;
+        color: $gold;
         text-shadow: 3px 2px 2px rgba(0,0,0,0.8);
 
         &--icon {
@@ -34,7 +39,7 @@ a:hover {
             text-decoration: none;
             font-size: 3em;
             padding: 3px;
-            border: 5px solid #f9a600;
+            border: 5px solid $gold;
             border-radius: 35px;
             box-shadow: 3px 2px 2px rgba(0,0,0,0.8);
         }
@@ -42,7 +47,7 @@ a:hover {
  }
 
  .ticket {
-     background-color: #f9a600;
+     background-color: $gold;
      color: $black;
      padding: 10px;
      box-shadow: 3px 3px 2px rgba(0,0,0,0.4);

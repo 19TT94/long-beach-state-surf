@@ -2,18 +2,32 @@
 // TEAM //
 ///////////////////////////////////////////////////////////
 .team {
-    margin-top: 80px;
-    background-color: white;
+    margin-top: 65px;
+    background-color: $white;
+
+    &__links {
+        display: none;
+        @include breakpoint (medium up) {
+            display: inline-flex;
+            padding: 1rem;
+        }
+    }
+
+    &__link {
+        color: $black;
+        padding: 1rem;
+    }
 }
 
 .profile-modal {
+    display: none;
     opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: white;
+    background: $white;
 }
 
 .team-profiles {
@@ -29,6 +43,8 @@
 }
 
 .profile {
+    float: left !important;
+
     &__image {
         width: 150px;
         height: 150px;
@@ -44,15 +60,45 @@
     }
 }
 
+.videos {
+    margin: 1rem;
+
+    @include breakpoint (medium up) {
+        margin: 2rem 10rem;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
 .events-title {
+    text-align: center;
     padding: 20px;
     margin-bottom: 0;
     font-size: 2em;
 }
 
 .events {
-    background-color: lightgray;
-    padding: 2rem;
+    text-align: center;
+    background-color: #eee;
+    padding: 2rem 2rem 5rem;
 
     li {
         font-size: 1.5em;

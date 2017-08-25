@@ -3,12 +3,35 @@
     {{profile-modal model=model}}
 
     <div class="team-profiles">
+        <ul class="team__links">
+            <li>
+                <a class="team__link" href="https://docs.google.com/forms/d/e/1FAIpQLScSgqRH0yZ6J_OeXyb0VYQnmSNXAmUnZJsuQJ8Bp65KBu7qtw/viewform?usp=sf_link">Join</a>
+            </li>
+            <li>
+                <a class="team__link" href="/#" {{action 'link' 'team' '#videos'}}>Videos</a>
+            </li>
+            <li>
+                <a class="team__link" href="/#" {{action 'link' 'team' '#events'}}>Events</a>
+            </li>
+        </ul>
+
         <h1 class="team-profiles-title center">The Team</h1>
 
         {{profile-grid model=model}}
 
     </div>
-    <div class="events">
+
+    <div id="videos" class="videos">
+        <h1 class="videos__title">Videos</h1>
+        <div class="videos__container">
+            {{#each model.videos as |video|}}
+                <iframe src="{{video.url}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="{{video.url}}">{{video.title}}</a> from {{video.credit}} on <a href="https://vimeo.com">Vimeo</a>.</p>
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="events" class="events">
         <h1 class="events-title">Event Schedule</h1>
         <ul>
             {{#each model.events as |event|}}
@@ -17,4 +40,5 @@
             {{/each}}
         </ul>
     </div>
+
 </div>
