@@ -125,6 +125,15 @@ const team = [
         'favorite':''
     },
     {
+        'profile':'/assets/images/eric/eric-profile.jpg',
+        'name': 'Eric Lemmerman',
+        'position': '',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
+    },
+    {
         'profile':'/assets/images/mark/mark-profile.jpg',
         'name': 'Mark Macintosh',
         'position': '',
