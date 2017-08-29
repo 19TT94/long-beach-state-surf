@@ -97,15 +97,15 @@ const team = [
         'home':'',
         'favorite':''
     },
-    // {
-    //     'profile':'/assets/images/ian/ian-profile.png',
-    //     'name': 'Ian Tachel',
-    //     'position': '',
-    //     'major':'',
-    //     'board':'',
-    //     'home':'',
-    //     'favorite':''
-    // },
+    {
+        'profile':'/assets/images/ian/ian-profile.png',
+        'name': 'Ian Tachel',
+        'position': '',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
+    },
     {
         'profile':'/assets/images/randy/randy-profile.jpg',
         'name': 'Randy Harp',
@@ -141,6 +141,24 @@ const team = [
         'board':'',
         'home':'',
         'favorite':''
+    }
+];
+
+const positions = [
+    {
+        'profile':'/assets/images/ben/ben-profile.jpg',
+        'name': 'Ben Lalande',
+        'position': 'Lead Videographer',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
+    }
+];
+
+const alumni = [
+    {
+        'profile':''
     }
 ];
 
