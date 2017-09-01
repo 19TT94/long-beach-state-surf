@@ -16,7 +16,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     display: inline-block;
     width: 100vw;
     background-color: $white;
@@ -161,6 +161,7 @@ hr {
 }
 
 .nav-menu {
+    z-index: 5;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -216,6 +217,7 @@ hr {
 
 //Mobile nav
 .mobile-nav {
+    z-index: 5;
     @include breakpoint (medium up) {
     display: none;
     }
@@ -226,6 +228,7 @@ hr {
     display:none;
     position: absolute;
     right: 0;
+    z-index: 5;
     @include breakpoint (medium up) {
         display: block;
     }
