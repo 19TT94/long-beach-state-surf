@@ -200,7 +200,16 @@ const supporters = [
     {
         'sponser':'/assets/images/calidog.png',
         'url':'https://www.calidogpomade.com'
+    },
+    {
+        'sponser':'/assets/images/spgadgets.png',
+        'url':'https://sp-connect.com/'
+    },
+    {
+        'sponser':'/assets/images/goodnessgarden.png',
+        'url':'http://www.goddessgarden.com/'
     }
+
 ];
 
 const community = [
