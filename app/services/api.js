@@ -99,7 +99,7 @@ const team = [
     },
     {
         'profile':'/assets/images/ian/ian-profile.png',
-        'name': 'Ian Tachel',
+        'name': 'Ian Tachell',
         'position': '',
         'major':'',
         'board':'',
@@ -136,6 +136,15 @@ const team = [
     {
         'profile':'/assets/images/mark/mark-profile.jpg',
         'name': 'Mark Macintosh',
+        'position': '',
+        'major':'',
+        'board':'',
+        'home':'',
+        'favorite':''
+    },
+    {
+        'profile':'/assets/images/john/john-profile.JPG',
+        'name':'John Hoyt',
         'position': '',
         'major':'',
         'board':'',
