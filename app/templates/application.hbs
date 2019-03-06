@@ -11,10 +11,10 @@
     <div class="nav-image"></div>
 
     <div class="mobile-nav">
-        <button class="nav-right"><i class="nav-icon" {{action "toggleMenu"}}>{{fa-icon "bars"}}</i></button>
+        <button class="nav-right" {{action "toggleMenu"}}>Menu</button>
         <div class="nav-menu {{if navIsExpanded "is-visible"}}">
             <ul class="nav-toggle">
-                <button class="nav-back" {{action "toggleMenu"}}>{{fa-icon "times"}}</button>
+                <button class="nav-back" {{action "toggleMenu"}}>Close</button>
                 <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScSgqRH0yZ6J_OeXyb0VYQnmSNXAmUnZJsuQJ8Bp65KBu7qtw/viewform?usp=sf_link"><li>JOIN</li></a>
                 {{#link-to 'team' class="nav-link"}}<li {{action "toggleMenu"}}>TEAM</li>{{/link-to}}
                 {{#link-to 'club' class="nav-link"}}<li {{action "toggleMenu"}}>CLUB</li>{{/link-to}}
@@ -22,8 +22,8 @@
                 {{#link-to 'community' class="nav-link"}}<li {{action "toggleMenu"}}>COMMUNITY</li>{{/link-to}}
                 {{#link-to 'contact' class="nav-link"}}<li {{action "toggleMenu"}}>CONTACT</li>{{/link-to}}
                 <ul class="nav-social">
-                    <li class="nav-social--link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf">{{fa-icon 'facebook'}}</a></li>
-                    <li class="nav-social--link"><a href="https://www.instagram.com/longbeachstatesurf/">{{fa-icon 'instagram'}}</a></li>
+                    <li class="nav-social--link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf">Facebook</a></li>
+                    <li class="nav-social--link"><a href="https://www.instagram.com/longbeachstatesurf/">instagram</a></li>
                 </ul>
             </ul>
         </div>
@@ -61,7 +61,7 @@
 <div class="footer">
     <p class="footer-info">&copy; Taylor Tobin</p>
     <ul class="footer-links">
-        <li class="footer-link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf">{{fa-icon 'facebook'}}</a></li>
-        <li class="footer-link"><a href="https://www.instagram.com/longbeachstatesurf/">{{fa-icon 'instagram'}}</a></li>
+        <li class="footer-link"><a href="https://www.facebook.com/search/top/?q=long%20beach%20state%20surf">Facebook</a></li>
+        <li class="footer-link"><a href="https://www.instagram.com/longbeachstatesurf/">Instagram</a></li>
     </ul>
 </div>
